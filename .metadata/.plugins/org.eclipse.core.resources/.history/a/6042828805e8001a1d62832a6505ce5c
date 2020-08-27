@@ -1,0 +1,11 @@
+package org.zerock.sample;
+
+import org.junit.runner.RunWith;
+import lombok.extern.log4j.Log4j;
+
+@RunWith(SpringClassRunner.class)
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@Log4j
+public class SampleTests {
+
+}

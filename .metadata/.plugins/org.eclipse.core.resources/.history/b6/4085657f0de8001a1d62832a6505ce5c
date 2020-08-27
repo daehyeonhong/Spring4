@@ -1,0 +1,14 @@
+package org.zerock.sample;
+
+import org.springframework.stereotype.Component;
+import lombok.Getter;
+
+@Component
+@Getter
+public class Hotel {
+
+	private Chef chef;/* Object */
+
+	private String name;/* Object */
+
+}

@@ -1,0 +1,4 @@
+org\zerock\persistence\JDBCTests.class
+org\zerock\sample\ChefTests.class
+org\zerock\persistence\DataSourceHikariTests.class
+org\zerock\sample\HotelTests.class

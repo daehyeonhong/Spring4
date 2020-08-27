@@ -1,0 +1,13 @@
+package org.zerock.mapper;
+
+import org.apache.ibatis.annotations.Select;
+
+public interface TimeMapper {
+
+	/* @Select Annotation ==> SQL Query Mapping */
+	@Select("SELECT SYSDATE FROM DUAL")
+	public String getTime();
+
+	public String getTimeXml();
+
+}

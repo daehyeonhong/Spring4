@@ -1,0 +1,15 @@
+
+8월 26, 2020 11:43:47.52 NEW SESSION
+8월 26, 2020 11:43:47.52 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+8월 26, 2020 11:45:12.741 
+8월 26, 2020 11:45:12.756 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 26, 2020 11:45:12.761 
+8월 26, 2020 11:45:12.765 
+8월 26, 2020 11:45:12.770 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+8월 26, 2020 11:45:12.852 
+8월 26, 2020 11:45:12.858 
+8월 26, 2020 11:45:12.868 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+8월 26, 2020 11:45:12.873 
+8월 26, 2020 11:45:26.01 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+8월 26, 2020 12:17:56.134 [Child 6476, MediaDecoderStateMachine #1] WARNING: 2b0b2abd300 OpenCubeb() failed to init cubeb: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp, line 330
+8월 26, 2020 12:17:56.203 [Child 6476, MediaDecoderStateMachine #1] WARNING: Decoder=2b0dea3c000 [OnMediaSinkAudioError]: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp, line 3891

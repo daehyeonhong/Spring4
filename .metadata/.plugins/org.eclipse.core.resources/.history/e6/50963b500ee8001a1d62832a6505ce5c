@@ -1,0 +1,16 @@
+package org.zerock.sample;
+
+import org.springframework.stereotype.Component;
+import lombok.Getter;
+import lombok.ToString;
+
+@Component
+@Getter /* Getter_Method 자동 생성 */
+@ToString /* toString_Method 자동 생성 */
+public class Hotel {
+
+	private Chef chef;/* Object */
+
+	private String name;/* Object */
+
+}
