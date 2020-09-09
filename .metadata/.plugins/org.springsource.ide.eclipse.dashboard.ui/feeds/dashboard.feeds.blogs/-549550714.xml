@@ -5,7 +5,94 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-09-02T12:00:00Z</updated>
+  <updated>2020-09-09T02:20:38Z</updated>
+  <entry>
+    <title>This Week in Spring - September 8th, 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/09/this-week-in-spring-september-8th-2020" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-09-09:4192</id>
+    <updated>2020-09-09T02:20:38Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! &lt;/p&gt;
+&lt;p&gt;Last week was SpringOne. It was absolutely bonkers. The videos are coming sooner rather than later. In the meantime, some of them are already up on the &lt;a href="http://spring.io/video"&gt;Spring YouTube channel&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Also, I announced that my new book &lt;a href="http://ReactiveSpring.io"&gt;&lt;em&gt;Reactive Spring&lt;/em&gt;&lt;/a&gt; is now available for sale! I&amp;rsquo;m &lt;a href="https://twitter.com/starbuxman/status/1303435484929040385"&gt;proofing the printed version&lt;/a&gt; as we speak :-) Meanwhile, you can pre-order the Kindle version or - preferably! - get the digital version over on &lt;a href="http://leanpub.com/reactive-spring-book"&gt;Leanpub&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Did I mention that last week was SpringOne? Seriously. There&amp;rsquo;s no way I can hope to cover all that happened. But I do hope you&amp;rsquo;ll listen to the latest installment of my podcast - first link in the following roundup - and I hope you&amp;rsquo;ll read the Azure SpringCloud blog below that I wrote, alongside our partners from Microsoft.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/04/a-bootiful-podcast-springone-2020-josh-s-book-reactive-spring-and-microsoft-java-architect-and-fellow-java-champion-jonathan-giles"&gt;A Bootiful Podcast: SpringOne 2020, Josh&amp;rsquo;s book &amp;ldquo;Reactive Spring,&amp;rdquo; and Microsoft Java Architect and fellow Java Champion Jonathan Giles&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/blog/announcing-the-general-availability-of-azure-spring-cloud"&gt;Announcing the General Availability of Azure Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://azure.microsoft.com/en-gb/blog/azure-spring-cloud-a-fully-managed-service-for-spring-boot-apps-is-now-generally-available/"&gt;Azure Spring Cloud: a fully managed service for Spring Boot apps is now generally available | Azure blog and updates | Microsoft Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/07/azure-in-the-enterprise-azure-sql-database-access-and-spring-boot"&gt;Azure in the Enterprise: Azure SQL Database Access and Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/02/hello-azure-spring-cloud"&gt;Hello, Azure Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=RG6UqPJdqIs&amp;feature=youtu.be"&gt;How to leverage the Spring framework with Azure SQL Database - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=IWQboyBohEI&amp;feature=youtu.be"&gt;How to use Spring and Initializr with Maven and Azure Cosmos DB - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=3zoDqgjjT6E&amp;feature=youtu.be"&gt;How to use the Spring framework to access Azure Service Bus - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=d4SfosPWz8s&amp;feature=youtu.be"&gt;How to use the Spring framework to access Azure Storage - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/jonashackt/status/1301163317537525760?s=21"&gt;Jonas Hecht on Twitter: &amp;quot;FINALLY (while attending #springone &#x1f60d;) I got my hands on the 09.2020 release of the @JavaMagazin &#x1f929;&#x1f929; containing my article abt @springboot &amp;amp; @graalvm beeing featured as part of the @springframework #coverstory &#x1f648;&#x1f973;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://searchapparchitecture.techtarget.com/news/252488508/Microsoft-VMware-make-Azure-Spring-Cloud-GA?amp=1&amp;__twitter_impression=true"&gt;Microsoft, VMware make Azure Spring Cloud GA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/03/spring-tools-4-7-2-released"&gt;Spring Tools 4.7.2 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.linkedin.com/pulse/super-charge-your-spring-boot-apps-azure-cloud-kylie-liang"&gt;Super Charge Your Spring Boot Apps with Azure Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/blog/the-state-of-spring-2020-report-is-now-available-learn-how-your-java-development-compares"&gt;The State of Spring 2020 Report Is Now Available?Learn How Your Java Development Compares&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is pretty crazy: the JDK has officialyl moved to Github! &lt;a href="https://inside.java/2020/09/05/skara-transition-done/"&gt;jdk/jdk repository transition to Git, GitHub and Skara is done&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Azure in the Enterprise: Azure SQL Database Access and Spring Boot</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/07/azure-in-the-enterprise-azure-sql-database-access-and-spring-boot" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-09-02:4186</id>
+    <updated>2020-09-07T12:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! I was on the Microsoft Azure YouTube show &lt;em&gt;Azure in the Enterprise&lt;/em&gt; with Lyle Dodge where I did a quick demonstration introducing the Spring for Microsoft Azure support for the Azure SQL Database Access. Check it out!&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/RG6UqPJdqIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt; &lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>A Bootiful Podcast: SpringOne 2020, Josh's book "Reactive Spring," and Microsoft Java Architect and fellow Java Champion Jonathan Giles</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/04/a-bootiful-podcast-springone-2020-josh-s-book-reactive-spring-and-microsoft-java-architect-and-fellow-java-champion-jonathan-giles" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-09-04:4190</id>
+    <updated>2020-09-04T12:37:50Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of a Bootiful Podcast! In this episode &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks about the massive, virtual SpringOne 2020 event (tens of thousands of people in attendance!), his just-completed book &lt;a href="http://www.reactivespring.io"&gt;&amp;ldquo;Reactive Spring&amp;rdquo;&lt;/a&gt;, and then talks to Microsoft&amp;rsquo;s &lt;a href="https://twitter.com/jonathangiles"&gt;Jonathan Giles (@jonathangiles) &lt;/a&gt;. &lt;/p&gt;
+&lt;iframe title="SpringOne 2020, Azure Spring Cloud and fellow Java Champion and Microsoft Java architect Jonathan Giles" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/idya5-ea2839?from=pb6admin&amp;download=1&amp;version=1&amp;auto=0&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Helvetica&amp;skin=1&amp;pfauth=&amp;btn-skin=107"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tools 4.7.2 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/03/spring-tools-4-7-2-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2020-09-03:4189</id>
+    <updated>2020-09-03T14:33:11Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.7.2 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;
+&lt;p&gt;Highlights from this release include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; new: this releases introduces a completely new wizard in Eclipse to add Spring Boot starter modules to existing projects. Take a look at the user guide section about it to learn all about this new and way more flexible way to add modules to your Spring Boot projects.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; new: this releases introduces an experimental early version of support for the Spring Boot OCI image building support in combination with Docker. You can now use the Spring Boot Dashboard in Spring Tools 4 for Eclipse to create images and run them on docker, debug the app on Docker and use Spring Boot Devtools on Docker - and all this is just one click away. Check out the preliminary section about it in the user guide.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; enhancement: Spring Tools 4 for Eclipse distributions now have the standard Eclipse tooling for Docker pre-installed&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: wizard to grab Spring guide projects now shows errors that happen while downloading the projects in dialog title section&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; fixed: live hover caused exceptions in certain situations, fix contributed to lsp4e project&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; enhancement: deploy Java 11 based Spring apps to Cloud Foundry now easier via the boot dashboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2020-08-27-472-release-incl-language-servers-version-1210"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2020-08-27-472-release-incl-language-servers-version-1210&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Tools 4.8.0 is scheduled to be released in late September 2020.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Hello, Azure Spring Cloud</title>
     <link rel="alternate" href="https://spring.io/blog/2020/09/02/hello-azure-spring-cloud" />
@@ -1766,189 +1853,6 @@ If you want to read more about them, you can checkout the updated &lt;a href="ht
 &lt;p&gt;If you&amp;rsquo;re interested in learning more about the changes to &lt;code&gt;application.properties&lt;/code&gt; and &lt;code&gt;application.yml&lt;/code&gt; processing, check out &lt;a href="https://spring.io/blog/2020/08/14/config-file-processing-in-spring-boot-2-4"&gt;this blog post&lt;/a&gt; on the subject.&lt;/p&gt;
 &lt;p&gt;If you want to get started with 2.4 and try out the new features, you can bootstrap a new project on &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.4.0-M1/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.4.0-RC1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/14/spring-security-5-4-0-rc1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Eleftheria Stein-Kousathana</name>
-    </author>
-    <id>tag:spring.io,2020-08-11:4161</id>
-    <updated>2020-08-14T00:28:52Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community, I¡¯m pleased to announce the release of
-Spring Security 5.4.0-RC1! You can find the complete details in the &lt;a href="https://github.com/spring-projects/spring-security/releases/tag/5.4.0-RC1"&gt;release notes&lt;/a&gt; and the highlights below:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="oauth-2-0"&gt;&lt;a class="anchor" href="#oauth-2-0"&gt;&lt;/a&gt;OAuth 2.0&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8903-allow-for-custom-clientregistration-clientauthenticationmethod"&gt;&lt;a class="anchor" href="#gh-8903-allow-for-custom-clientregistration-clientauthenticationmethod"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8903"&gt;gh-8903&lt;/a&gt; - Allow for custom ClientRegistration.clientAuthenticationMethod&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-6489-simplify-retrieving-introspection-specific-attributes"&gt;&lt;a class="anchor" href="#gh-6489-simplify-retrieving-introspection-specific-attributes"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6489"&gt;gh-6489&lt;/a&gt; - Simplify retrieving Introspection-specific attributes&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="web"&gt;&lt;a class="anchor" href="#web"&gt;&lt;/a&gt;Web&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8804-remove-need-for-websecurityconfigureradapter"&gt;&lt;a class="anchor" href="#gh-8804-remove-need-for-websecurityconfigureradapter"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8804"&gt;gh-8804&lt;/a&gt; - Remove need for WebSecurityConfigurerAdapter&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8599-reactive-switchuserwebfilter-for-user-impersonation"&gt;&lt;a class="anchor" href="#gh-8599-reactive-switchuserwebfilter-for-user-impersonation"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8599"&gt;gh-8599&lt;/a&gt; - Reactive SwitchUserWebFilter for user impersonation&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8854-add-authenticationconverterserverwebexchangematcher"&gt;&lt;a class="anchor" href="#gh-8854-add-authenticationconverterserverwebexchangematcher"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/pull/8854"&gt;gh-8854&lt;/a&gt; - Add AuthenticationConverterServerWebExchangeMatcher&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="kotlin"&gt;&lt;a class="anchor" href="#kotlin"&gt;&lt;/a&gt;Kotlin&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8783-support-custom-filter-in-server-kotlin-dsl"&gt;&lt;a class="anchor" href="#gh-8783-support-custom-filter-in-server-kotlin-dsl"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8783"&gt;gh-8783&lt;/a&gt; - Support custom filter in Server Kotlin DSL&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="saml-2-0"&gt;&lt;a class="anchor" href="#saml-2-0"&gt;&lt;/a&gt;SAML 2.0&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8887-add-relyingpartyregistrationresolver"&gt;&lt;a class="anchor" href="#gh-8887-add-relyingpartyregistrationresolver"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8887"&gt;gh-8887&lt;/a&gt; - Add RelyingPartyRegistrationResolver&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8484-add-metadata-based-relyingpartyregistration-construction"&gt;&lt;a class="anchor" href="#gh-8484-add-metadata-based-relyingpartyregistration-construction"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8484"&gt;gh-8484&lt;/a&gt; - Add Metadata-based RelyingPartyRegistration construction&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8693-support-saml-2-0-sp-metadata-endpoints"&gt;&lt;a class="anchor" href="#gh-8693-support-saml-2-0-sp-metadata-endpoints"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8693"&gt;gh-8693&lt;/a&gt; - Support SAML 2.0 SP Metadata Endpoints&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8141-add-authnrequest-customization-support"&gt;&lt;a class="anchor" href="#gh-8141-add-authnrequest-customization-support"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8141"&gt;gh-8141&lt;/a&gt; - Add AuthnRequest Customization Support&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8769-add-conditionvalidator-configuration-support"&gt;&lt;a class="anchor" href="#gh-8769-add-conditionvalidator-configuration-support"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8769"&gt;gh-8769&lt;/a&gt; - Add ConditionValidator Configuration Support&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="deprecation-notice"&gt;&lt;a class="anchor" href="#deprecation-notice"&gt;&lt;/a&gt;Deprecation Notice&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Note that some APIs in OAuth 2.0 and SAML 2.0 were deprecated in this release:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8908-deprecate-customusertypesoauth2userservice"&gt;&lt;a class="anchor" href="#gh-8908-deprecate-customusertypesoauth2userservice"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8908"&gt;gh-8908&lt;/a&gt; - Deprecate CustomUserTypesOAuth2UserService&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8906-deprecate-clientregistration-redirecturitemplate"&gt;&lt;a class="anchor" href="#gh-8906-deprecate-clientregistration-redirecturitemplate"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8906"&gt;gh-8906&lt;/a&gt; - Deprecate ClientRegistration.redirectUriTemplate&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8902-deprecate-implicitgrantconfigurer"&gt;&lt;a class="anchor" href="#gh-8902-deprecate-implicitgrantconfigurer"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8902"&gt;gh-8902&lt;/a&gt; - Deprecate ImplicitGrantConfigurer&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8845-saml2authenticationtoken-should-take-a-relyingpartyregistration"&gt;&lt;a class="anchor" href="#gh-8845-saml2authenticationtoken-should-take-a-relyingpartyregistration"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8845"&gt;gh-8845&lt;/a&gt; - Saml2AuthenticationToken should take a RelyingPartyRegistration&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8788-relyingpartyregistration-credentials-should-be-split-by-party"&gt;&lt;a class="anchor" href="#gh-8788-relyingpartyregistration-credentials-should-be-split-by-party"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8788"&gt;gh-8788&lt;/a&gt; - RelyingPartyRegistration Credentials Should Be Split by Party&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="gh-8777-relyingpartyregistration-should-use-metadata-spec-language"&gt;&lt;a class="anchor" href="#gh-8777-relyingpartyregistration-should-use-metadata-spec-language"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/8777"&gt;gh-8777&lt;/a&gt; - RelyingPartyRegistration should use metadata spec language&lt;/h5&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
-&lt;a href="https://docs.spring.io/spring-security/site/docs/5.4.0-RC1/reference/html5/"&gt;Reference&lt;/a&gt;
-| &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.3.3 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/13/spring-boot-2-3-3-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2020-08-13:4169</id>
-    <updated>2020-08-13T18:10:11Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot 2.3.3 has been released and is now available from &lt;a href="https://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.3.3.RELEASE"&gt;67 bug fixes, enhancements, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.3.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Batch 4.3.0-M2 is out!</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/13/spring-batch-4-3-0-m2-is-out" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mahmoud Ben Hassine</name>
-    </author>
-    <id>tag:spring.io,2020-08-13:4168</id>
-    <updated>2020-08-13T16:16:27Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the Spring Batch team, I am pleased to announce that Spring Batch 4.3.0-M2 is now available from our &lt;a href="https://repo.spring.io/milestone/"&gt;milestone repository&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#what-s-new" class="anchor" name="what-s-new"&gt;&lt;/a&gt;What¡¯s new?&lt;/h2&gt;
-&lt;p&gt;This release comes with a number of new features and enhancements that you can find in the &lt;a href="https://github.com/spring-projects/spring-batch/releases/tag/4.3.0-M2"&gt;release notes&lt;/a&gt;, but here are the major highlights:&lt;/p&gt;&lt;h4&gt;&lt;a href="#1-kafka-support-enhancements" class="anchor" name="1-kafka-support-enhancements"&gt;&lt;/a&gt;1. Kafka support enhancements&lt;/h4&gt;
-&lt;p&gt;By default, the &lt;code&gt;KafkaItemReader&lt;/code&gt; reads a topic from the beginning. When we initially introduced this reader in v4.2, it was not possible to configure it to read records from a custom offset. In this release, we added this feature. As a result of this addition, it is now possible to configure the reader to start from the offset stored in Kafka.&lt;/p&gt;&lt;h4&gt;&lt;a href="#2-micrometer-support-enhancements" class="anchor" name="2-micrometer-support-enhancements"&gt;&lt;/a&gt;2. Micrometer support enhancements&lt;/h4&gt;
-&lt;p&gt;Micrometer support has been introduced in v4.2 last year, and we got a lot of feedback since then. One of the requested features is the ability to know the currently active jobs. Spring Batch provides a metric called &lt;code&gt;spring.batch.job.active&lt;/code&gt; that gives the number of currently active jobs. However, until now, this metric did not let you know which specific jobs are currently active. In this release, we enriched the metric tags to make this possible.&lt;/p&gt;&lt;h4&gt;&lt;a href="#3-add-a-new-code-jobparametersincrementer-code-implementation" class="anchor" name="3-add-a-new-code-jobparametersincrementer-code-implementation"&gt;&lt;/a&gt;3. Add a new &lt;code&gt;JobParametersIncrementer&lt;/code&gt; implementation&lt;/h4&gt;
-&lt;p&gt;The &lt;code&gt;RunIdIncrementer&lt;/code&gt; serves its purpose well in most cases: It increments a job parameter called &lt;code&gt;run.id&lt;/code&gt;, which is typically used as job instance discriminator. However, in some circumstances (such as un-ordered database sequences, concurrent access to the incrementer, and others), this incrementer might generate non-unique values, which prevents new job instances from being launched.&lt;/p&gt;
-&lt;p&gt;In this release, we introduced a new &lt;code&gt;JobParametersIncrementer&lt;/code&gt; that is based on a &lt;a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/support/incrementer/DataFieldMaxValueIncrementer.html"&gt;&lt;code&gt;DataFieldMaxValueIncrementer&lt;/code&gt;&lt;/a&gt; from Spring Framework. This incrementer provides stronger guarantees on the uniqueness of generated values compared to the &lt;code&gt;RunIdIncrementer&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#dependency-upgrades" class="anchor" name="dependency-upgrades"&gt;&lt;/a&gt;Dependency Upgrades&lt;/h2&gt;
-&lt;p&gt;This release upgrades Spring projects dependencies to the following versions:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Framework 5.3.0-M2&lt;/li&gt;
-  &lt;li&gt;Spring Data 2020.0.0-M2&lt;/li&gt;
-  &lt;li&gt;Spring Integration 5.4.0-M2&lt;/li&gt;
-  &lt;li&gt;Spring AMQP 2.3.0-M2&lt;/li&gt;
-  &lt;li&gt;Spring for Apache Kafka 2.6.0-M1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Spring Batch v4.3.0-M2 can be consumed with Spring Boot 2.4.0-M2, which is planned to be released soon. Stay tuned!&lt;/p&gt;&lt;h2&gt;&lt;a href="#feedback-and-contributions" class="anchor" name="feedback-and-contributions"&gt;&lt;/a&gt;Feedback and contributions&lt;/h2&gt;
-&lt;p&gt;I would like to thank all contributors who made this release possible! We look forward to your feedback on this milestone on &lt;a href="https://twitter.com/springbatch"&gt;Twitter&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/tagged/spring-batch"&gt;StackOverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-projects/spring-batch/issues/new/choose"&gt;Github&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/docs/4.3.0-M2/reference/pdf/spring-batch-reference.pdf"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Premiering: The RSocket Revolution</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/13/premiering-the-rsocket-revolution" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-08-13:4167</id>
-    <updated>2020-08-13T08:53:28Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! I have been developing a new talk and I finally got a chance to do a pre-recorded version of it for a keynote for a conference (in China) recently, and want to share the content with you all, so I&amp;rsquo;m premiering it here, too. This talk, &lt;strong&gt;The RSocket Revolution&lt;/strong&gt;, is about 38 minutes and looks at:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;some of the new features in Spring Boot 2.3x including GraalVM-capable native images&lt;/li&gt;
-  &lt;li&gt;the basics of RSocket&lt;/li&gt;
-  &lt;li&gt;fundamentals with RSocket &lt;code&gt;@Controller&lt;/code&gt;s in Spring Framework&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://twitter.com/making"&gt;Toshiaki Maki&amp;rsquo;s&lt;/a&gt; fantastic &lt;code&gt;rsc&lt;/code&gt; RSocket client&lt;/li&gt;
-  &lt;li&gt;Declarative, Feign-like clients with &lt;a href="http://github.com/spring-projects-experimental/spring-retrosocket"&gt;Spring Retrosocket&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The &lt;code&gt;RSocketRequester&lt;/code&gt; to support making requests of RSocket services on the JVM&lt;/li&gt;
-  &lt;li&gt;Spring Integration&amp;rsquo;s reactive and RSocket support&lt;/li&gt;
-  &lt;li&gt;Bidirectional communication - where both client and service separately initiate the communication - using RSocket&lt;/li&gt;
-  &lt;li&gt;Securing RSocket endpoints with Spring Security and RSocket metadata&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I hope you&amp;rsquo;re all healthy and doing well, and that you enjoy this roving tour of the RSocket Revolution! And, if you enjoy it (and even if you don&amp;rsquo;t!), then be sure to register for &lt;a href="https://springone.io/"&gt;&lt;strong&gt;SpringOne 2020&lt;/strong&gt;&lt;/a&gt;, happening in just a few short weeks - September 2-3: it&amp;rsquo;s virtual and it&amp;rsquo;s &lt;em&gt;free&lt;/em&gt;. There will be a ton more interesting things then - &lt;em&gt;do not miss it&lt;/em&gt;!&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ipVfRdl5SP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

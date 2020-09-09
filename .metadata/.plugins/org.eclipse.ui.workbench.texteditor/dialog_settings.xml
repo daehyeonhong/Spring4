@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="stl"/>
+		<item key="selection" value="해당"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="해당"/>
+			<item value="log4j"/>
+			<item value="log4j-ap"/>
+			<item value="@ContextConfiguration(&quot;file:src/main/webapp/WEB-INF/spring/root-context.xml&quot;)"/>
+			<item value="servlet"/>
+			<item value="initBinder"/>
+			<item value="List"/>
+			<item value="list"/>
+			<item value="jackson"/>
 			<item value="stl"/>
 			<item value="jstl"/>
 			<item value="warn"/>

@@ -6,9 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.function.Consumer;
-
-import org.springframework.beans.propertyeditors.CurrencyEditor;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -25,11 +22,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.zerock.domain.SampleDTO;
 import com.zerock.domain.SampleDTOList;
 import com.zerock.domain.TodoDTO;
-
 import lombok.extern.log4j.Log4j;
 
 @Controller
@@ -162,8 +157,12 @@ public class SampleController {
 			log.info("─────────────────");
 			log.info("name: " + t.getOriginalFilename());
 			log.info("size" + t.getSize());
+			long now = new Date().getTime();
 			try {
-				t.transferTo(new File("c:\\upload\\" + t.getOriginalFilename()));
+				String originalFileName = t.getOriginalFilename();
+				String fileName = originalFileName.substring(0, originalFileName.indexOf("."));
+				String extra = originalFileName.substring(originalFileName.indexOf("."));
+				t.transferTo(new File("c:\\upload\\" + fileName + now + extra));
 			} catch (IllegalStateException | IOException e) {
 				e.printStackTrace();
 			}

@@ -24,7 +24,10 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 
-	<context:component-scan base-package="com.zerock.controll" />
+	<context:component-scan base-package="com.zerock" />
+	<!-- <context:component-scan base-package="com.zerock.controll" /> -->
+	<!-- 예외 객체 Bean을 위한 경로 설정 -->
+	<!-- <context:component-scan base-package="com.zerock.exception" /> -->
 
 	<!-- File_Upload Configuration -->
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

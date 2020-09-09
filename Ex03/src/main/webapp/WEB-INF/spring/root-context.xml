@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+	<!-- HikariConnectPool Configuration log4jdbc.log4j2.properties /resource에 추가 -->
+	<!-- HikariConnectPool Configuration -->
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig"
+		p:driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+		p:jdbcUrl="jdbc:log4jdbc:oracle:thin:@15.165.66.140:1521:xe"
+		p:username="book_ex"
+		p:password="book_ex" />
+
+	<!-- dataSource Configuration -->
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close"
+		c:configuration-ref="hikariConfig" />
+
+	<!-- sqlSessionFactory Configuration -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+		p:dataSource-ref="dataSource" />
+
+	<!-- Mapper Route -->
+	<mybatis-spring:scan base-package="org.zerock.mapper" />
+	
+	<!-- Service Layer -->
+	<context:component-scan base-package="org.zerock.service" />
+
+</beans>
