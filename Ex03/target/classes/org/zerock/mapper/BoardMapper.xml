@@ -4,7 +4,7 @@
 
 	<select id="getList" resultType="org.zerock.domain.BoardDTO">
 		<![CDATA[
-			SELECT*FROM table_board WHERE bno>0
+			SELECT*FROM table_board WHERE bno>0 ORDER BY bno DESC
 		]]>
 	</select>
 
@@ -15,7 +15,8 @@
 	</insert>
 
 	<insert id="insertSelectKey">
-		<selectKey keyProperty="bno" order="BEFORE" resultType="long">
+		<selectKey keyProperty="bno" order="BEFORE"
+			resultType="long">
 			<![CDATA[
 				SELECT seq_board.NEXTVAL from dual
 			]]>
@@ -26,7 +27,8 @@
 		]]>
 	</insert>
 
-	<select id="read" parameterType="long" resultType="org.zerock.domain.BoardDTO">
+	<select id="read" parameterType="long"
+		resultType="org.zerock.domain.BoardDTO">
 		<![CDATA[
 			SELECT*FROM table_board WHERE bno=#{bno}
 		]]>
@@ -37,7 +39,7 @@
 			DELETE FROM table_board WHERE BNO=#{bno}
 		]]>
 	</delete>
-	
+
 	<update id="update">
 		<![CDATA[
 			UPDATE table_board

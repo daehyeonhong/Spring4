@@ -31,3 +31,7 @@
 8월 28, 2020 17:38:55.302 
 8월 28, 2020 17:38:55.317 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 8월 28, 2020 17:38:55.333 
+
+9월 10, 2020 10:14:40.531 NEW SESSION
+9월 10, 2020 10:14:40.531 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+9월 10, 2020 14:41:52.517 Can't find symbol 'eglSwapBuffersWithDamageEXT'.

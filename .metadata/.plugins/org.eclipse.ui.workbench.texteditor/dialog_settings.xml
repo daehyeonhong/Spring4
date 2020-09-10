@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="해당"/>
+		<item key="selection" value="move"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="move"/>
+			<item value="regdate"/>
+			<item value="Reg"/>
+			<item value="reg"/>
+			<item value="Mapping(&quot;"/>
+			<item value="mapping(&quot;"/>
+			<item value="../"/>
 			<item value="해당"/>
 			<item value="log4j"/>
 			<item value="log4j-ap"/>
@@ -16,13 +23,14 @@
 			<item value="initBinder"/>
 			<item value="List"/>
 			<item value="list"/>
-			<item value="jackson"/>
-			<item value="stl"/>
-			<item value="jstl"/>
-			<item value="warn"/>
-			<item value="spring"/>
 		</list>
 		<list key="replacehistory">
+			<item value="regDate"/>
+			<item value="regdate"/>
+			<item value="Mapping(&quot;/"/>
+			<item value="mapping(&quot;/"/>
+			<item value="/resources/"/>
+			<item value="resources/"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

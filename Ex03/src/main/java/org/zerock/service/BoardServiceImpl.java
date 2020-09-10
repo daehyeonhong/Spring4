@@ -32,10 +32,6 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public boolean modify(BoardDTO dto) {
-		dto.setBno(6L);
-		dto.setTitle("또수정");
-		dto.setContent("또수정");
-		dto.setWriter("또수정");
 		log.info("modify..." + dto);
 
 		return mapper.update(dto) == 1;
