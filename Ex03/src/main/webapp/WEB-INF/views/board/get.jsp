@@ -42,7 +42,7 @@
 					<button data-oper="list" class="btn btn-default">글목록</button>
 					
 					<form id="operForm" action="/board/modify" method="get">
-						<input type="hidden" id="bno" name="bno" value="${cri.bno}" />
+						<input type="hidden" id="bno" name="bno" value="${board.bno}" />
 						<input type="hidden" id="pageNum" name="pageNum" value="${cri.pageNum}" />
 						<input type="hidden" id="amount" name="amount" value="${cri.amount}" />
 						<input type="hidden" id="keyword" name="keyword" value="${cri.keyword}" />
