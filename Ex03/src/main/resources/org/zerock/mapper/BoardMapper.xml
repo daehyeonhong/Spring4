@@ -8,6 +8,20 @@
 		]]>
 	</select>
 
+	<select id="getListA" resultType="org.zerock.domain.BoardDTO">
+		<![CDATA[
+			SELECT bno,title,content,writer,regDate,updateDate
+				FROM
+					(
+						SELECT /*+INDEX_DESC(table_board pk_board)*/
+							ROWNUM rn,bno,title,content,writer,regDate,updateDate
+							FROM table_board
+						WHERE ROWNUM<=#{pageNumber}*#{amount}
+					)
+			WHERE rn>(#{pageNumber}-1)*#{amount}
+		]]>
+	</select>
+
 	<insert id="insert">
 		<![CDATA[
 			INSERT INTO table_board(bno,title,content,writer)VALUES(seq_board.NEXTVAL,#{title},#{content},#{writer})
@@ -50,5 +64,13 @@
 				WHERE bno=#{bno}
 		]]>
 	</update>
+
+	<select id="getTotal" resultType="int">
+		<![CDATA[
+			SELECT COUNT(*)
+				FROM table_board
+			WHERE bno>0
+		]]>
+	</select>
 
 </mapper>

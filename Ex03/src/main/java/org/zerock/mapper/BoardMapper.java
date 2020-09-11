@@ -2,11 +2,14 @@ package org.zerock.mapper;
 
 import java.util.List;
 import org.zerock.domain.BoardDTO;
+import org.zerock.domain.Criteria;
 
 public interface BoardMapper {
 
 	/* @Select("SELECT*FROM table_board WHERE bno>0") */
 	public List<BoardDTO> getList();
+
+	public List<BoardDTO> getListA(Criteria criteria);
 
 	/* Insert */
 	public void insert(BoardDTO dto);
@@ -22,5 +25,8 @@ public interface BoardMapper {
 
 	/* 수정처리 */
 	public int update(BoardDTO dto);
+
+	/* 전체 조회 건 수 */
+	public int getTotal(Criteria criteria);
 
 }

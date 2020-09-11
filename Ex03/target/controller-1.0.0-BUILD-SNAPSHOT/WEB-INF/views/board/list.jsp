@@ -57,28 +57,28 @@
 						<form id='searchForm' action="/board/list" method='get'>
 							<select name='type'>
 								<option value=""
-									<c:out value="${pageMaker.cri.type == null?'selected':''}"/>>--</option>
+									<c:out value="${pageMaker.criteria.type == null?'selected':''}"/>>--</option>
 								<option value="T"
-									<c:out value="${pageMaker.cri.type eq 'T'?'selected':''}"/>>제목</option>
+									<c:out value="${pageMaker.criteria.type eq 'T'?'selected':''}"/>>제목</option>
 								<option value="C"
-									<c:out value="${pageMaker.cri.type eq 'C'?'selected':''}"/>>내용</option>
+									<c:out value="${pageMaker.criteria.type eq 'C'?'selected':''}"/>>내용</option>
 								<option value="W"
-									<c:out value="${pageMaker.cri.type eq 'W'?'selected':''}"/>>작성자</option>
+									<c:out value="${pageMaker.criteria.type eq 'W'?'selected':''}"/>>작성자</option>
 								<option value="TC"
-									<c:out value="${pageMaker.cri.type eq 'TC'?'selected':''}"/>>제목
+									<c:out value="${pageMaker.criteria.type eq 'TC'?'selected':''}"/>>제목
 									or 내용</option>
 								<option value="TW"
-									<c:out value="${pageMaker.cri.type eq 'TW'?'selected':''}"/>>제목
+									<c:out value="${pageMaker.criteria.type eq 'TW'?'selected':''}"/>>제목
 									or 작성자</option>
 								<option value="TWC"
-									<c:out value="${pageMaker.cri.type eq 'TWC'?'selected':''}"/>>제목
+									<c:out value="${pageMaker.criteria.type eq 'TWC'?'selected':''}"/>>제목
 									or 내용 or 작성자</option>
 							</select> <input type='text' name='keyword'
-								value='<c:out value="${pageMaker.cri.keyword}"/>' /> <input
-								type='hidden' name='pageNum'
-								value='<c:out value="${pageMaker.cri.pageNum}"/>' /> <input
+								value='<c:out value="${pageMaker.criteria.keyword}"/>' /> <input
+								type='hidden' name='pageNumber'
+								value='<c:out value="${pageMaker.criteria.pageNumber}"/>' /> <input
 								type='hidden' name='amount'
-								value='<c:out value="${pageMaker.cri.amount}"/>' />
+								value='<c:out value="${pageMaker.criteria.amount}"/>' />
 							<button class='btn btn-default'>Search</button>
 						</form>
 					</div>
@@ -110,7 +110,7 @@
 						<c:forEach var="num" begin="${pageMaker.startPage}"
 							end="${pageMaker.endPage}">
 							<li
-								class='paginate_button  ${pageMaker.cri.pageNum == num? "active":""} '>
+								class='paginate_button  ${pageMaker.criteria.pageNumber == num? "active":""} '>
 								<a href="${num}">${num}</a>
 							</li>
 						</c:forEach>
@@ -127,13 +127,13 @@
 			</div>
 
 			<form id='actionForm' action="/board/list" method='get'>
-				<input type='hidden' name='pageNum' value='${pageMaker.cri.pageNum}'>
-				<input type='hidden' name='amount' value='${pageMaker.cri.amount}'>
+				<input type='hidden' name='pageNumber' value='${pageMaker.criteria.pageNumber}'>
+				<input type='hidden' name='amount' value='${pageMaker.criteria.amount}'>
 
 				<input type='hidden' name='type'
-					value='<c:out value="${ pageMaker.cri.type }"/>'> <input
+					value='<c:out value="${ pageMaker.criteria.type }"/>'> <input
 					type='hidden' name='keyword'
-					value='<c:out value="${ pageMaker.cri.keyword }"/>'>
+					value='<c:out value="${ pageMaker.criteria.keyword }"/>'>
 
 
 			</form>
@@ -218,7 +218,7 @@
 
 									console.log('click');
 
-									actionForm.find("input[name='pageNum']")
+									actionForm.find("input[name='pageNumber']")
 											.val($(this).attr("href"));
 									actionForm.submit();
 								});
@@ -258,7 +258,7 @@
 										return false;
 									}
 
-									searchForm.find("input[name='pageNum']")
+									searchForm.find("input[name='pageNumber']")
 											.val("1");
 									e.preventDefault();
 

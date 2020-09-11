@@ -61,6 +61,7 @@ public class ControllerTests {
 				.getModelAndView().getModelMap());
 	}
 
+	@Ignore
 	@Test
 	public void testModify() throws Exception {
 		MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
@@ -80,6 +81,15 @@ public class ControllerTests {
 	public void testRemove() throws Exception {
 		String resultPage = mockMvc.perform(MockMvcRequestBuilders.post("/board/remove").param("bno", "6")).andReturn()
 				.getModelAndView().getViewName();
+
+		log.info(resultPage);
+	}
+
+	@Test
+	public void getList() throws Exception {
+		String resultPage = mockMvc
+				.perform(MockMvcRequestBuilders.get("/board/list").param("pageNumber", "1").param("amount", "10"))
+				.andReturn().getModelAndView().getViewName();
 
 		log.info(resultPage);
 	}

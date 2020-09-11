@@ -6,9 +6,9 @@
 		<item key="uncategorizedFilter" value="true"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.mybatis.generator.eclipse.ui.NewConfigFileWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.mybatis.generator.eclipse.ui.category"/>
+			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
 	</section>
 	<section name="InstallationDialogSettings">

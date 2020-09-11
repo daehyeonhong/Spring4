@@ -3,6 +3,7 @@ package org.zerock.service;
 import java.util.List;
 import org.springframework.stereotype.Service;
 import org.zerock.domain.BoardDTO;
+import org.zerock.domain.Criteria;
 import org.zerock.mapper.BoardMapper;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
@@ -50,6 +51,18 @@ public class BoardServiceImpl implements BoardService {
 
 		/* mapper Method 호출 및 값 리턴 */
 		return mapper.getList();
+	}
+
+	@Override
+	public List<BoardDTO> getListA(Criteria criteria) {
+		log.info("getListWithPageing");
+		return mapper.getListA(criteria);
+	}
+
+	@Override
+	public int getTotal(Criteria criteria) {
+		log.info("getTotal");
+		return mapper.getTotal(criteria);
 	}
 
 }
