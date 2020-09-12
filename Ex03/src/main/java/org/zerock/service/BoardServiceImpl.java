@@ -55,7 +55,7 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public List<BoardDTO> getListA(Criteria criteria) {
-		log.info("getListWithPageing");
+		log.info("getListWithPaging");
 		return mapper.getListA(criteria);
 	}
 
