@@ -2207,3 +2207,93 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
 !SUBENTRY 1 org.eclipse.ui 2 0 2020-09-13 10:41:38.222
 !MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:03.173
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:03.180
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@32f6d000[org.springframework.tooling.boot.ls:1.20.0.202007271426(id=635)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:03.194
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:03.341
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:06.774
+!MESSAGE Boot LS startup time from start to initialized: 3561ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:06.980
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.mLhGKvzsisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:06.986
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:06.990
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:06.997
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.003
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.008
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.012
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.017
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.mLhGKvzs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.022
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.028
+!MESSAGE buffering callback sts4.classpath.mLhGKvzs Ex03 false 51
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.033
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.039
+!MESSAGE classpath=53 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.045
+!MESSAGE buffering callback sts4.classpath.mLhGKvzs Ex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.050
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.056
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.062
+!MESSAGE buffering callback sts4.classpath.mLhGKvzs Ex01 false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.067
+!MESSAGE executing callback sts4.classpath.mLhGKvzs 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-13 10:44:07.102
+!MESSAGE executing callback sts4.classpath.mLhGKvzs SUCCESS [done]
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-09-13 12:47:33.997
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2020-09-13 12:47:34.014
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2020-09-13 15:38:00.669
+!MESSAGE Several ports (8005, 8181) required by Tomcat v8.5 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 01:18:41.511
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mLhGKvzs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 01:18:41.520
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.mLhGKvzs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 01:18:41.528
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-14 01:18:41.532
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mLhGKvzs => OK

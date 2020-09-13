@@ -115,8 +115,7 @@
 
 						<c:forEach var="num" begin="${pageMaker.startPage}"
 							end="${pageMaker.endPage}">
-							<li
-								class='paginate_button  ${pageMaker.criteria.pageNumber == num? "active":""} '>
+							<li class='paginate_button ${pageMaker.criteria.pageNumber == num? "active":""} '>
 								<a href="${num}">${num}</a>
 							</li>
 						</c:forEach>
@@ -139,7 +138,6 @@
 					value='<c:out value="${ pageMaker.criteria.type }"/>'> <input
 					type='hidden' name='keyword'
 					value='<c:out value="${ pageMaker.criteria.keyword }"/>'>
-
 			</form>
 
 			<!-- Modal  추가 -->
