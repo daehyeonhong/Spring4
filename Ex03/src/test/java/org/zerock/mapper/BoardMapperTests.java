@@ -86,6 +86,10 @@ public class BoardMapperTests {
 		criteria.setKeyword("새로");
 		criteria.setType("TC");
 
+		log.info("여기");
+		log.info(criteria.getTypeArray());
+		log.info(criteria);
+
 		List<BoardDTO> list = mapper.getListA(criteria);
 		list.forEach(board -> log.info(board));
 
