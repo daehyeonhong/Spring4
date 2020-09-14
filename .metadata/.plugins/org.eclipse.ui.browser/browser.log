@@ -35,3 +35,18 @@
 9월 10, 2020 10:14:40.531 NEW SESSION
 9월 10, 2020 10:14:40.531 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
 9월 10, 2020 14:41:52.517 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+
+9월 14, 2020 10:15:50.297 NEW SESSION
+9월 14, 2020 10:15:50.297 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+9월 14, 2020 11:35:15.404 
+9월 14, 2020 11:35:15.432 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+9월 14, 2020 11:35:15.438 
+9월 14, 2020 12:14:59.350 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+9월 14, 2020 12:15:14.813 
+9월 14, 2020 12:15:14.824 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+9월 14, 2020 12:15:14.829 
+9월 14, 2020 12:15:23.186 Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+9월 14, 2020 12:17:28.406 
+9월 14, 2020 12:17:28.414 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+9월 14, 2020 12:17:28.420 
+9월 14, 2020 12:21:34.954 Can't find symbol 'eglSwapBuffersWithDamageEXT'.

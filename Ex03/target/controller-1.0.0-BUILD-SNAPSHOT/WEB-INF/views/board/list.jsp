@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ include file="../includes/header.jsp"%>
@@ -36,11 +35,19 @@
 					<c:forEach items="${list}" var="board">
 						<tr>
 							<td><c:out value="${board.bno}" /></td>
+
+							<td>
+								<a class="move" href="${board.bno}">${board.title}</a>
+							</td>
+
+							<%-- <td>
+								<a href="/board/get?bno=${board.bno}">${board.title}</a>
+							</td> --%>
 							<%-- <td><a href='/board/get?bno=<c:out value="${board.bno}"/>'><c:out value="${board.title}"/></a></td> --%>
 
-							<td><a class='move' href='<c:out value="${board.bno}"/>'>
+							<%-- <td><a class='move' href='<c:out value="${board.bno}"/>'>
 									<c:out value="${board.title}" />
-							</a></td>
+							</a></td> --%>
 
 							<td><c:out value="${board.writer}" /></td>
 							<td><fmt:formatDate pattern="yyyy-MM-dd"
@@ -84,7 +91,6 @@
 					</div>
 				</div>
 
-
 				<div class='pull-right'>
 					<ul class="pagination">
 
@@ -109,8 +115,7 @@
 
 						<c:forEach var="num" begin="${pageMaker.startPage}"
 							end="${pageMaker.endPage}">
-							<li
-								class='paginate_button  ${pageMaker.criteria.pageNumber == num? "active":""} '>
+							<li class='paginate_button ${pageMaker.criteria.pageNumber == num? "active":""} '>
 								<a href="${num}">${num}</a>
 							</li>
 						</c:forEach>
@@ -119,7 +124,6 @@
 							<li class="paginate_button next"><a
 								href="${pageMaker.endPage +1 }">Next</a></li>
 						</c:if>
-
 
 					</ul>
 				</div>
@@ -134,10 +138,7 @@
 					value='<c:out value="${ pageMaker.criteria.type }"/>'> <input
 					type='hidden' name='keyword'
 					value='<c:out value="${ pageMaker.criteria.keyword }"/>'>
-
-
 			</form>
-
 
 			<!-- Modal  추가 -->
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
@@ -163,7 +164,6 @@
 			</div>
 			<!-- /.modal -->
 
-
 		</div>
 		<!--  end panel-body -->
 	</div>
@@ -171,107 +171,66 @@
 </div>
 <!-- /.row -->
 
-
-
-
-
-
 <script type="text/javascript">
 	$(document)
 			.ready(
 					function() {
-
 						var result = '<c:out value="${result}"/>';
-
 						checkModal(result);
-
 						history.replaceState({}, null, null);
-
 						function checkModal(result) {
-
 							if (result === '' || history.state) {
 								return;
 							}
-
 							if (parseInt(result) > 0) {
 								$(".modal-body").html(
 										"게시글 " + parseInt(result)
 												+ " 번이 등록되었습니다.");
 							}
-
 							$("#myModal").modal("show");
 						}
-
 						$("#regBtn").on("click", function() {
-
 							self.location = "/board/register";
-
 						});
-
 						var actionForm = $("#actionForm");
-
 						$(".paginate_button a").on(
 								"click",
 								function(e) {
-
 									e.preventDefault();
-
 									console.log('click');
-
 									actionForm.find("input[name='pageNumber']")
 											.val($(this).attr("href"));
 									actionForm.submit();
 								});
-
-						$(".move")
-								.on(
-										"click",
-										function(e) {
-
+						$(".move").on("click",function(e) {
 											e.preventDefault();
-											actionForm
-													.append("<input type='hidden' name='bno' value='"
+											actionForm.append("<input type='hidden' name='bno' value='"
 															+ $(this).attr(
 																	"href")
 															+ "'>");
 											actionForm.attr("action",
 													"/board/get");
 											actionForm.submit();
-
 										});
-
 						var searchForm = $("#searchForm");
-
 						$("#searchForm button").on(
 								"click",
 								function(e) {
-
 									if (!searchForm.find("option:selected")
 											.val()) {
 										alert("검색종류를 선택하세요");
 										return false;
 									}
-
 									if (!searchForm.find(
 											"input[name='keyword']").val()) {
 										alert("키워드를 입력하세요");
 										return false;
 									}
-
 									searchForm.find("input[name='pageNumber']")
 											.val("1");
 									e.preventDefault();
-
 									searchForm.submit();
-
 								});
-
 					});
 </script>
-
-
-
-
-
-
 <%@include file="../includes/footer.jsp"%>

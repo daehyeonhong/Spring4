@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ include file="../includes/header.jsp"%>
@@ -36,18 +37,16 @@
 						<tr>
 							<td><c:out value="${board.bno}" /></td>
 
-							<td>
-								<a class="move" href="${board.bno}">${board.title}</a>
-							</td>
+							<td><a class="move" href="${board.bno}">${board.title}</a></td>
 
 							<%-- <td>
-								<a href="/board/get?bno=${board.bno}">${board.title}</a>
-							</td> --%>
+<a href="/board/get?bno=${board.bno}">${board.title}</a>
+</td> --%>
 							<%-- <td><a href='/board/get?bno=<c:out value="${board.bno}"/>'><c:out value="${board.title}"/></a></td> --%>
 
 							<%-- <td><a class='move' href='<c:out value="${board.bno}"/>'>
-									<c:out value="${board.title}" />
-							</a></td> --%>
+<c:out value="${board.title}" />
+</a></td> --%>
 
 							<td><c:out value="${board.writer}" /></td>
 							<td><fmt:formatDate pattern="yyyy-MM-dd"
@@ -64,21 +63,21 @@
 						<form id='searchForm' action="/board/list" method='get'>
 							<select name='type'>
 								<option value=""
-									<c:out value="${pageMaker.criteria.type == null?'selected':''}"/>>--</option>
+									<c:out value="${pageMaker.criteria.type == null?'selected':''}" />>--</option>
 								<option value="T"
-									<c:out value="${pageMaker.criteria.type eq 'T'?'selected':''}"/>>제목</option>
+									<c:out value="${pageMaker.criteria.type eq 'T'?'selected':''}" />>제목</option>
 								<option value="C"
-									<c:out value="${pageMaker.criteria.type eq 'C'?'selected':''}"/>>내용</option>
+									<c:out value="${pageMaker.criteria.type eq 'C'?'selected':''}" />>내용</option>
 								<option value="W"
-									<c:out value="${pageMaker.criteria.type eq 'W'?'selected':''}"/>>작성자</option>
+									<c:out value="${pageMaker.criteria.type eq 'W'?'selected':''}" />>작성자</option>
 								<option value="TC"
-									<c:out value="${pageMaker.criteria.type eq 'TC'?'selected':''}"/>>제목
+									<c:out value="${pageMaker.criteria.type eq 'TC'?'selected':''}" />>제목
 									or 내용</option>
 								<option value="TW"
-									<c:out value="${pageMaker.criteria.type eq 'TW'?'selected':''}"/>>제목
+									<c:out value="${pageMaker.criteria.type eq 'TW'?'selected':''}" />>제목
 									or 작성자</option>
 								<option value="TWC"
-									<c:out value="${pageMaker.criteria.type eq 'TWC'?'selected':''}"/>>제목
+									<c:out value="${pageMaker.criteria.type eq 'TWC'?'selected':''}" />>제목
 									or 내용 or 작성자</option>
 							</select> <input type='text' name='keyword'
 								value='<c:out value="${pageMaker.criteria.keyword}"/>' /> <input
@@ -115,7 +114,8 @@
 
 						<c:forEach var="num" begin="${pageMaker.startPage}"
 							end="${pageMaker.endPage}">
-							<li class='paginate_button ${pageMaker.criteria.pageNumber == num? "active":""} '>
+							<li
+								class='paginate_button ${pageMaker.criteria.pageNumber == num? "active":""} '>
 								<a href="${num}">${num}</a>
 							</li>
 						</c:forEach>
@@ -131,8 +131,9 @@
 			</div>
 
 			<form id='actionForm' action="/board/list" method='get'>
-				<input type='hidden' name='pageNumber' value='${pageMaker.criteria.pageNumber}'>
-				<input type='hidden' name='amount' value='${pageMaker.criteria.amount}'>
+				<input type='hidden' name='pageNumber'
+					value='${pageMaker.criteria.pageNumber}'> <input
+					type='hidden' name='amount' value='${pageMaker.criteria.amount}'>
 
 				<input type='hidden' name='type'
 					value='<c:out value="${ pageMaker.criteria.type }"/>'> <input
@@ -202,9 +203,13 @@
 											.val($(this).attr("href"));
 									actionForm.submit();
 								});
-						$(".move").on("click",function(e) {
+						$(".move")
+								.on(
+										"click",
+										function(e) {
 											e.preventDefault();
-											actionForm.append("<input type='hidden' name='bno' value='"
+											actionForm
+													.append("<input type='hidden' name='bno' value='"
 															+ $(this).attr(
 																	"href")
 															+ "'>");

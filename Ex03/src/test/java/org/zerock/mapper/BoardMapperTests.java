@@ -1,5 +1,7 @@
 package org.zerock.mapper;
 
+import java.util.List;
+
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.zerock.domain.BoardDTO;
+import org.zerock.domain.Criteria;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -63,6 +66,7 @@ public class BoardMapperTests {
 		log.info("Delete Count: " + mapper.delete(1L));
 	}
 
+	@Ignore
 	@Test
 	public void testUpdate() {
 		BoardDTO dto = new BoardDTO();
@@ -74,6 +78,19 @@ public class BoardMapperTests {
 		int count = mapper.update(dto);
 
 		log.info("UPDATECOUNT" + count);
+	}
+
+	@Test
+	public void testSearch() {
+		Criteria criteria = new Criteria();
+		criteria.setKeyword("새로");
+		criteria.setType("TC");
+
+		List<BoardDTO> list = mapper.getListA(criteria);
+		list.forEach(board -> log.info(board));
+
+		int total = mapper.getTotal(criteria);
+		log.info("전체 건수: " + total);
 	}
 
 }

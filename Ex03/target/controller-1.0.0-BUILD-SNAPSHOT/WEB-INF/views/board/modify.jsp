@@ -1,122 +1,95 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@include file="../includes/header.jsp"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ include file="../includes/header.jsp"%>
 
 <div class="row">
 	<div class="col-lg-12">
-		<h1 class="page-header">Board Modify</h1>
+		<h1 class="page-header">글 수정</h1>
 	</div>
-	<!-- /.col-lg-12 -->
+	<!-- col-lg-12 -->
 </div>
-<!-- /.row -->
+<!-- row -->
 
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-default">
+			<div class="panel-heading">글 수정하기</div>
+			<!-- panel-heading -->
 
-			<div class="panel-heading">Board Modify</div>
-			<!-- /.panel-heading -->
 			<div class="panel-body">
-
-				<form role="form" action="/board/modify" method="post">
-
-					<input type='hidden' name='pageNumber' value='<c:out value="${criteria.pageNumber }"/>'>
-					<input type='hidden' name='amount' value='<c:out value="${criteria.amount }"/>'>
-					<input type='hidden' name='type' value='<c:out value="${criteria.type }"/>'>
-					<input type='hidden' name='keyword' value='<c:out value="${criteria.keyword }"/>'>
-
-
+				<form role="form" action="/board/modify" method="POST">
+					<input type="hidden" name="pageNumber" value="${criteria.pageNumber}">
+					<input type="hidden" name="amount" value="${criteria.amount}">
+					<input type="hidden" name="type" value="${criteria.type}">
+					<input type="hidden" name="keyword" value="${criteria.keyword}">
+				
 					<div class="form-group">
-						<label>Bno</label>
-						<input class="form-control" name='bno' value="<c:out value="${board.bno }"/>" readonly="readonly">
+						<label>글 번호</label>
+						<input type="text" name="bno" value="${board.bno}" class="form-control" readonly />
 					</div>
 
 					<div class="form-group">
-						<label>Title</label> <input class="form-control" name='title' value="<c:out value="${board.title }"/>">
+						<label>글 제목</label>
+						<input type="text" name="title" value="${board.title}" class="form-control" />
 					</div>
 
 					<div class="form-group">
-						<label>Text area</label>
-						<textarea class="form-control" rows="3" name='content'>
-							<c:out value="${board.content}" />
-						</textarea>
+						<label>작성자</label>
+						<input type="text" name="writer" value="${board.writer}" class="form-control" readonly />
 					</div>
 
 					<div class="form-group">
-						<label>Writer</label>
-						<input class="form-control" name='writer' value="<c:out value="${board.writer}"/>" readonly="readonly">
+						<label>글 내용</label>
+						<textarea rows="3" class="form-control" name="content">${board.content}</textarea>
 					</div>
 
 					<div class="form-group">
-						<label>RegDate</label>
-						<input class="form-control" name='regDate' value="<fmt:formatDate pattern = "yyyy/MM/dd" value = "${board.regdate}" />" readonly="readonly">
+						<label>등록일시</label>
+						<input type="text" name="regDate" value='<fmt:formatDate value="${board.regDate}" pattern="yyyy/MM/dd"/>' class="form-control" readonly />
 					</div>
 
 					<div class="form-group">
-						<label>Update Date</label>
-						<input class="form-control" name='updateDate' value="<fmt:formatDate pattern = "yyyy/MM/dd" value = "${board.updateDate}" />" readonly="readonly">
+						<label>수정 일자</label>
+						<input type="text" name="updateDate" value='<fmt:formatDate value="${board.updateDate}" pattern="yyyy/MM/dd"/>' class="form-control" readonly />
 					</div>
 
-					<button type="submit" data-oper='modify' class="btn btn-default">Modify</button>
-					<button type="submit" data-oper='remove' class="btn btn-danger">Remove</button>
-					<button type="submit" data-oper='list' class="btn btn-info">List</button>
+					<button type="submit" data-a="modify" class="btn btn-success">수정</button>
+					<button type="submit" data-a="remove" class="btn btn-danger">삭제</button>
+					<button type="submit" data-a="list" class="btn btn-default">글 목록</button>
+
 				</form>
-
-
 			</div>
-			<!--  end panel-body -->
-
 		</div>
-		<!--  end panel-body -->
 	</div>
-	<!-- end panel -->
 </div>
-<!-- /.row -->
-
 <script type="text/javascript">
-	$(document).ready(function() {
+	let formObject = $('form');
 
-		var formObj = $("form");
+	$('button').on('click', function(event) {
+		event.preventDefault();/* 기본 동작(submit() == page이동)을 중지 */
 
-		$('button').on("click", function(e) {
+		let operation = $(this).data("a");
 
-			e.preventDefault();
+		if (operation === 'remove') {
+			formObject.attr("action", "/board/remove");
+		} else if (operation === 'list') {
+			formObject.attr('action', '/board/list').attr('method', 'get');
 
-			var operation = $(this).data("oper");
+			let pageNumberTag = $('input[name="pageNumber"]').clone();
+			let amountTag = $('input[name="amount"]').clone();
+			let typeTag = $('input[name="type"]').clone();
+			let keywordTag = $('input[name="keyword",id="keke"]').clone();
+			formObject.empty();
 
-			console.log(operation);
+			formObject.append(pageNumberTag);
+			formObject.append(amountTag);
+			formObject.append(typeTag);
+			formObject.append(keywordTag);
+		}
 
-			if (operation === 'remove') {
-				formObj.attr("action", "/board/remove");
-
-			} else if (operation === 'list') {
-				//move to list
-				formObj.attr("action", "/board/list").attr("method", "get");
-
-				var pageNumTag = $("input[name='pageNumber']").clone();
-				var amountTag = $("input[name='amount']").clone();
-				var keywordTag = $("input[name='keyword']").clone();
-				var typeTag = $("input[name='type']").clone();
-
-				formObj.empty();
-
-				formObj.append(pageNumTag);
-				formObj.append(amountTag);
-				formObj.append(keywordTag);
-				formObj.append(typeTag);
-			}
-
-			formObj.submit();
+		formObject.submit();/* URL로 이동 처리 */
 		});
-
-	});
 </script>
-
-
-
-
-
-<%@include file="../includes/footer.jsp"%>
+<%@ include file="../includes/footer.jsp"%>

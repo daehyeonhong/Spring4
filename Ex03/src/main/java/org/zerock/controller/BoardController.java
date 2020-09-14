@@ -88,16 +88,25 @@ public class BoardController {
 		int total = service.getTotal(criteria);
 		log.info("total: " + total);
 
-		redirectAttributes.addFlashAttribute("pageMaker", new PageDTO(criteria, total));
+		redirectAttributes.addAttribute("pageNumber", criteria.getPageNumber());
+		redirectAttributes.addAttribute("amount", criteria.getAmount());
+		redirectAttributes.addAttribute("type", criteria.getType());
+		redirectAttributes.addAttribute("keyword", criteria.getKeyword());
 
 		return "redirect:/board/list";
 	}
 
 	@PostMapping("/remove")
-	public String remove(@RequestParam("bno") Long bno, RedirectAttributes redirectAttributes) {
+	public String remove(@RequestParam("bno") Long bno, @ModelAttribute("criterai") Criteria criteria,
+			RedirectAttributes redirectAttributes) {
 		log.info("/remove");
 
 		redirectAttributes.addFlashAttribute("result", service.remove(bno) ? "success" : "fail");
+
+		redirectAttributes.addAttribute("pageNumber", criteria.getPageNumber());
+		redirectAttributes.addAttribute("amount", criteria.getAmount());
+		redirectAttributes.addAttribute("type", criteria.getType());
+		redirectAttributes.addAttribute("keyword", criteria.getKeyword());
 
 		return "redirect:/board/list";
 	}
