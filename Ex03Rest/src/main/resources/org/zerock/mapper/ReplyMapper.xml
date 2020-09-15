@@ -3,9 +3,39 @@
 <mapper namespace="org.zerock.mapper.ReplyMapper">
 
 	<insert id="insert">
-		INSERT INTO table_reply(rno,bno,reply,replyer)
-		VALUES
-		(seq_reply.NEXTVAL,#{bno},#{reply},#{replyer})
+		<![CDATA[
+			INSERT INTO table_reply(rno,bno,reply,replyer)
+			VALUES
+			(seq_reply.NEXTVAL,#{bno},#{reply},#{replyer})
+		]]>
 	</insert>
+
+	<select id="read" resultType="org.zerock.domain.ReplyVO">
+		<![CDATA[
+			SELECT*FROM table_reply WHERE rno=#{rno}
+		]]>
+	</select>
+
+	<delete id="delete">
+		<![CDATA[
+			DELETE FROM table_reply where rno=#{rno}
+		]]>
+	</delete>
+
+	<update id="update" parameterType="org.zerock.domain.ReplyVO">
+		<![CDATA[
+			UPDATE table_reply SET reply=#{reply},update_date=SYSDATE WHERE rno=#{rno}
+		]]>
+	</update>
+	<!-- <![CDATA[]]> -->
+
+	<select id="listWithPaging"
+		resultType="org.zerock.domain.ReplyVO">
+		<![CDATA[
+			SELECT rno,bno,reply,replyer,reply_date,update_date FROM table_reply
+				WHERE bno=#{bno}
+			ORDER BY rno asc
+		]]>
+	</select>
 
 </mapper>
