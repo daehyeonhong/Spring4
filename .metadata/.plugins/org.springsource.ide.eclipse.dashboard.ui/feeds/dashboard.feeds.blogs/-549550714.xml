@@ -5,7 +5,121 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-09-14T12:00:00Z</updated>
+  <updated>2020-09-16T05:18:32Z</updated>
+  <entry>
+    <title>This Week in Spring - September 15th, 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/16/this-week-in-spring-september-15th-2020" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-09-16:4199</id>
+    <updated>2020-09-16T05:18:32Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s been an absolutely nutty week! It&amp;rsquo;s &lt;em&gt;just&lt;/em&gt; Tuesday and I&amp;rsquo;m beat! &lt;/p&gt;
+&lt;p&gt;Over the weekend I completely refactored the pipeline I used for my just-published book &lt;a href="http://ReactiveSpring.io"&gt;&lt;em&gt;Reactive Spring&lt;/em&gt;&lt;/a&gt; (which, by the way, is now available on Leanpub and on Amazon as digital and paperback editions) and turned it into the turnkey Asciidoctor pipeline I&amp;rsquo;d always wanted but - since I was traveling 650,000 miles a year, speaking at hundreds of conferences or events yearly, writing a 450-page book, releasing weekly blogs, recording a weekly podcast, releasing an almost weekly screencast and, you know, being a member of a wonderful family - I just didn&amp;rsquo;t have the time to do. I&amp;rsquo;d managed to get a Spring Boot-ified Asciidoctor pipeline working. It worked. It produced &lt;code&gt;.epub&lt;/code&gt;, &lt;code&gt;.mobi&lt;/code&gt;, screen-ready &lt;code&gt;.PDF&lt;/code&gt;, prepress-ready &lt;code&gt;.PDF&lt;/code&gt;, and HTML versions on every &lt;code&gt;git push&lt;/code&gt;. But everything was serialized. It was &lt;em&gt;slow&lt;/em&gt;. And inflexible since I got the absolute basic flow working for my needs and nothing more. That all changed this weekend. I present to you &lt;code&gt;http://bootiful-asciidoctor.github.io&lt;/code&gt;. It&amp;rsquo;s all Apache2 licensed open-source. It&amp;rsquo;s a Spring Boot and Spring Batch pipeline. You can deploy the Spring Batch job to your favorite Ci environment and tell it which Git repositories contain your &lt;code&gt;.adoc&lt;/code&gt; files and which contain the code you need to be included. You tell it how you want your produced artifacts - Amazon S3 or checked into a Git repository&amp;rsquo;s branch - and it&amp;rsquo;ll emit those. It&amp;rsquo;s delivered as a Spring Boot autoconfiguration, too, so it publishes events and everything is overridable as &lt;code&gt;@Bean&lt;/code&gt; instances. I am hoping that if folks like it, they&amp;rsquo;ll feel the urge to write their own technical books, and perhaps even some on Spring :-) &lt;/p&gt;
+&lt;p&gt;What else? I recorded a few episodes of &lt;em&gt;A Bootiful Podcast&lt;/em&gt;. Fun. Always fun.&lt;/p&gt;
+&lt;p&gt;Oh! This morning I was on the Microsoft Learn TV conference introducing Azure Spring Cloud along with a bunch of awesome folks from Microsoft and all around the world. That was fun - look for those recordings to be available soon. &lt;/p&gt;
+&lt;p&gt;And I spent today pre-recording a talk - &lt;em&gt;Bootiful Kotliin&lt;/em&gt; - intended for the &lt;a href="http://j4k.io"&gt;J4k.io&lt;/a&gt; conference next month. It took literally 50m to record the talk, and 12h to finesse everything with Adobe Premiere and Adobe Auditon and Adobe InDesign, and Adobe Photoshop so that it worked as I hoped it would. What a journey! But it&amp;rsquo;s done. And a grateful GPU thanks me. &lt;/p&gt;
+&lt;p&gt;And of course, there&amp;rsquo;s the preparation for this amazing week that was. Just look at this list of good stuff! I don&amp;rsquo;t even know where to&amp;hellip; yes I do. That&amp;rsquo;s a fib. I totally know where to start. At the first entry! And the first entry of course is the interview I did with Spring legend and amazing human being Rossen Stoyanchev. He&amp;rsquo;s been an integral part of the Spring team for as long as I can remember and more. He&amp;rsquo;s everything I love about people and about Spring. A modest, patient, friendly genius. You know him - even if you don&amp;rsquo;t &lt;em&gt;know&lt;/em&gt; him - if you&amp;rsquo;ve ever used Spring to do any kind of web programming. Yep. He&amp;rsquo;s &lt;em&gt;that&lt;/em&gt; prolific. Trust me, you&amp;rsquo;re going to want to listen to that episode. It was one of those episodes where I went back for a re-listen! I was there the first time and I still feel like I missed stuff. &lt;/p&gt;
+&lt;p&gt;Anyway my friends, there is a ton of stuff to get to, so let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/10/a-bootiful-podcast-legendary-spring-contributor-rossen-stoyanchev-on-all-things-web-reactive-and-rsocket"&gt;A Bootiful Podcast: Legendary Spring contributor Rossen Stoyanchev on all things web, reactive and RSocket&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://jdk.java.net/15/"&gt;Java 15 went GA today&lt;/a&gt;! This means that text blocks are officially a thing! They&amp;rsquo;re not hidden behind the preview-feature flags! Get the bits while they&amp;rsquo;re hot!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/09/15/announcing-inside-java-podcast/"&gt;Announcing the Inside Java Podcast&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/14/azure-in-the-enterprise-azure-cosmos-db-and-spring-boot"&gt;Azure in the Enterprise: Azure Cosmos DB and Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/09/azure-in-the-enterprise-azure-service-bus-and-spring-boot"&gt;Azure in the Enterprise: Azure Service Bus and Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/10/case-study-relational-database-source-and-file-sink"&gt;Case Study: Relational Database Source and File Sink&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?reload=9&amp;v=Y5dcDyeRlDQ&amp;feature=youtu.be"&gt;Deploy Friday: E09 Spring Framework - Java in focus - YouTube. Did I mention I was on the &amp;ldquo;Deploy Friday&amp;rdquo; show not too long ago? The video is up!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/09/10/tuf-enhancing-software-update-security/"&gt;Enhancing Software Update Security With TUF (The Update Framework)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/09/14/podcast-003/"&gt;Episode 3 ¡°The State of Java¡± with Georges Saab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/09/10/elastic-metaspace-jep-proposed-to-target/"&gt;JEP proposed to target JDK 16: 387: Elastic Metaspace&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I presented at my talk &lt;em&gt;Bootiful Testing&lt;/em&gt; for the &lt;a href="https://blog.jetbrains.com/idea/2020/09/jetbrains-technology-day-for-java-bootiful-testing/"&gt;JetBrains Technology Day for Java&lt;/a&gt; and Jetbrains did a nice recap blog on the talk.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/news/2020/09/azure-spring-cloud-ga/?itm_campaign=rightbar_v2&amp;itm_source=infoq&amp;itm_medium=news_link&amp;itm_content=link_text"&gt;Microsoft Announces the General Availability of Azure Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/15/spring-framework-5-2-9-5-1-18-5-0-19-and-4-3-29-available-now"&gt;Spring Framework 5.2.9, 5.1.18, 5.0.19, and 4.3.29 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/15/spring-framework-5-3-goes-rc1"&gt;Spring Framework 5.3 goes RC1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/10/spring-security-5-4-goes-ga"&gt;Spring Security 5.4 goes GA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/15/spring-vault-2-3-m1-available"&gt;Spring Vault 2.3 M1 available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Um9djPTtPe0"&gt;The Path Towards Spring Boot Native Applications - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/09/15/the-arrival-of-java-15/"&gt;The arrival of Java 15&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/making/status/1305869573548376070"&gt;Toshiaki Maki on Twitter: &amp;ldquo;&#x1f680; rsc 0.6.0 has been released &lt;a href="https://t.co/fww8PQ80ap"&gt;https://t.co/fww8PQ80ap&lt;/a&gt; &#x1f511; Authentication Extension is supported!! @RSocketIO @SpringSecurity &lt;a href="https://t.co/FugKJwAzhB"&gt;https://t.co/FugKJwAzhB&lt;/a&gt; Demo: &lt;a href="https://t.co/gTNpN39mu8"&gt;https://t.co/gTNpN39mu8&lt;/a&gt; Try: brew install making/tap/rsc&amp;rdquo; / Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/09/11/you-spoke-we-listened-state-of-spring-2020-report-is-here"&gt;You spoke, we listened: State of Spring 2020 report is here!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 5.3 goes RC1</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/15/spring-framework-5-3-goes-rc1" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2020-09-15:4197</id>
+    <updated>2020-09-15T15:32:31Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+&lt;p&gt;On behalf of the development team, it is my pleasure to announce that a feature-complete Spring Framework 5.3 release candidate is available from our &lt;a href="https://repo.spring.io/milestone/org/springframework/spring-framework-bom/5.3.0.RC1/"&gt;milestone repository&lt;/a&gt; now! Check out the list of &lt;a href="https://github.com/spring-projects/spring-framework/wiki/What%27s-New-in-Spring-Framework-5.x#whats-new-in-version-53"&gt;new features&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#upgrading-to-version-53"&gt;upgrade notes&lt;/a&gt; on our GitHub wiki, including several deprecation notes.&lt;/p&gt;
+&lt;p&gt;As the last feature branch of the 5.x generation, we are preparing the 5.3.x line for general availability in late October - with an extended maintenance phase up until 2024. While we strongly encourage appropriate migration steps, all of our deprecated packages are going to remain in place for the entire 5.3.x phase. In terms of Java platform support, the current range is JDK 8-15 but we expect this to grow into JDK 8-17 for our Spring Framework 5.3.x releases next year.&lt;/p&gt;
+&lt;p&gt;Spring supports Java 14/15 records and similar record-style classes now, as a refined variant of constructor-based binding. Spring&amp;rsquo;s core container includes refinements for &lt;a href="https://github.com/spring-projects-experimental/spring-graalvm-native"&gt;native application deployment&lt;/a&gt; and performance optimizations in terms of data structures and concurrent access.&lt;/p&gt;
+&lt;p&gt;This release brings a new &lt;code&gt;spring-r2dbc&lt;/code&gt; module with core &lt;a href="https://r2dbc.io/"&gt;R2DBC&lt;/a&gt; support, including a reactive &lt;code&gt;R2dbcTransactionManager&lt;/code&gt; as well as a reactive &lt;code&gt;DatabaseClient&lt;/code&gt;. Its sister module &lt;code&gt;spring-jdbc&lt;/code&gt; features a new &lt;code&gt;JdbcTransactionManager&lt;/code&gt; (with extended data access exception translation), as well as a &lt;code&gt;DataClassRowMapper&lt;/code&gt; with constructor-based result binding support (covering Java records) and new &lt;code&gt;queryForStream&lt;/code&gt; methods (for lazy result iteration) on our good old &lt;code&gt;JdbcTemplate&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In the web framework, we provide a JSON option with &lt;a href="https://github.com/Kotlin/kotlinx.serialization"&gt;Kotlin multiplatform serialization&lt;/a&gt; now. &lt;code&gt;WebTestClient&lt;/code&gt; allows for performing requests against MockMvc, as a single test client API for mock versus live tests. WebFlux comes with a fully reactive message reader for multipart requests.&lt;/p&gt;
+&lt;p&gt;Please give Spring Framework 5.3 RC1 a try, e.g. as part of the upcoming Spring Boot 2.4 M3 release which will be available on &lt;a href="https://start.spring.io/"&gt;start.spring.io&lt;/a&gt; soon, and let us know about any regressions etc.&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Vault 2.3 M1 available</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/15/spring-vault-2-3-m1-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Paluch</name>
+    </author>
+    <id>tag:spring.io,2020-09-15:4198</id>
+    <updated>2020-09-15T14:42:46Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community, I&amp;#8217;d like to announce the availability of the first Spring Vault milestone release &lt;code&gt;2.3.0-M1&lt;/code&gt; of the 2.3 development line.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Most notable changes in this release are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Support for Vault&amp;#8217;s &lt;a href="https://www.vaultproject.io/docs/secrets/transform"&gt;Transform secrets backend&lt;/a&gt;. Please note that this is an enterprise feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;code&gt;ReactiveVaultEndpointProvider&lt;/code&gt; for non-blocking lookup of &lt;code&gt;VaultEndpoint&lt;/code&gt; that can be used for reactive service discovery.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;VaultKeyValueMetadataOperations&lt;/code&gt; for Key-Value metadata interaction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updates to our documentations specifically on how to use Vault&amp;#8217;s various secret backends with Spring Vault.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For a complete list of changes see the &lt;a href="http://docs.spring.io/spring-vault/docs/2.3.0-M1/changelog.txt"&gt;2.3.0-M1 changelog&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-vault/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-vault/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-vault/docs/2.3.0-M1/reference/html/"&gt;Documentation for 2.3.0-M1&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-vault"&gt;Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework 5.2.9, 5.1.18, 5.0.19, and 4.3.29 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/09/15/spring-framework-5-2-9-5-1-18-5-0-19-and-4-3-29-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St?phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2020-09-15:4196</id>
+    <updated>2020-09-15T11:51:20Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce a full round of Spring Framework releases.&lt;/p&gt;
+&lt;p&gt;Spring Framework 5.2.9 includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.9.RELEASE"&gt;42 fixes and improvements&lt;/a&gt;. Spring Framework 5.1.18 includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.1.18.RELEASE"&gt;16 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Maintenance releases for &lt;code&gt;5.0.x&lt;/code&gt; (&lt;code&gt;5.0.19&lt;/code&gt;) and &lt;code&gt;4.3.x&lt;/code&gt; (&lt;code&gt;4.3.29&lt;/code&gt;) with &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.0.19.RELEASE"&gt;13 selected fixes and improvements&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v4.3.29.RELEASE"&gt;9 selected fixes and improvements&lt;/a&gt; respectively are also available today.&lt;/p&gt;
+&lt;p&gt;Stay tuned for the release candidate of Spring Framework 5.3 and follow-up Spring Boot releases!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.2.9.RELEASE/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Azure in the Enterprise: Azure Cosmos DB and Spring Boot</title>
     <link rel="alternate" href="https://spring.io/blog/2020/09/14/azure-in-the-enterprise-azure-cosmos-db-and-spring-boot" />
@@ -1298,340 +1412,6 @@ export STREAM_APPS_URI=https://repo.spring.io/libs-snapshot-local/org/springfram
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot for Apache Geode &amp; VMware GemFire 1.4.0-M2 and 1.3.3.RELEASE Available</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/22/spring-boot-for-apache-geode-vmware-gemfire-1-4-0-m2-and-1-3-3-release-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>John Blum</name>
-    </author>
-    <id>tag:spring.io,2020-08-21:4177</id>
-    <updated>2020-08-22T00:05:28Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the Spring, Apache Geode and VMware Tanzu GemFire communities, is it is my pleasure to announce the release of &lt;em&gt;&lt;strong&gt;Spring Boot for Apache Geode &amp;amp; VMware GemFire&lt;/strong&gt;&lt;/em&gt; (SBDG) &lt;code&gt;1.4.0-M2&lt;/code&gt; &amp;amp; &lt;code&gt;1.3.3.RELEASE&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;SBDG &lt;code&gt;1.4.0-M2&lt;/code&gt; builds on:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Boot &lt;code&gt;2.4.0-M2&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;5.3.0-M2&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Data for Apache Geode &amp;amp; VMware GemFire (SDG) &lt;code&gt;2020.0.0-M2&lt;/code&gt; (Ockham-M2/2.4.0-M2)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Session for Apache Geode &amp;amp; VMware GemFire (SSDG) &lt;code&gt;2020.0.0-M1&lt;/code&gt; (2.4.0-M1)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Test for Apache Geode &amp;amp; VMware GemFire (STDG) &lt;code&gt;0.0.18.RELEASE&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;SBDG &lt;code&gt;1.3.3.RELEASE&lt;/code&gt; builds on:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Boot &lt;code&gt;2.3.3.RELEASE&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;5.2.8.RELEASE&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Data for Apache Geode &amp;amp; VMware GemFire (SDG) &lt;code&gt;Neumann-SR3&lt;/code&gt; (2.3.3.RELEASE)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Session for Apache Geode &amp;amp; VMware GemFire (SSDG) &lt;code&gt;Dragonfruit-RELEASE&lt;/code&gt; (2.3.0.RELEASE)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Spring Test for Apache Geode &amp;amp; VMware GemFire (STDG) &lt;code&gt;0.0.18.RELEASE&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can review the &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/wiki/Spring-Boot-for-Apache-Geode-and-Pivotal-GemFire-Version-Compatibility-Matrix#version-compatibility-matrix"&gt;Version Compatibility Matrix&lt;/a&gt; for complete details (Scroll the table to the right to see all dependencies).&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The best way to get started, building Spring Boot applications using Apache Geode is with the Spring Initializer at &lt;a href="https://start.spring.io9"&gt;start.spring.io&lt;/a&gt;.  Just click on this &lt;a href="https://start.spring.io/#!platformVersion=2.4.0-M2&amp;amp;dependencies=geode"&gt;link&lt;/a&gt; to get started.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="whats-new"&gt;&lt;a class="anchor" href="#whats-new"&gt;&lt;/a&gt;What&amp;#8217;s New&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;SBDG 1.4 M2 adds dedicated support for &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/#geode-caching-provider-inline-caching-asynchronous"&gt;Asynchronous (Write-Behind), Inline Caching&lt;/a&gt;!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;By applying the &lt;em&gt;Inline Caching&lt;/em&gt; pattern to your Spring Boot applications, Apache Geode will &lt;em&gt;Read-Through&lt;/em&gt; on cache misses and &lt;em&gt;Write-Through&lt;/em&gt; (sync), or &lt;em&gt;Write-Behind&lt;/em&gt; (async), on cache updates, automatically, without requiring you to do anything special in your application.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You should use asynchronous, &lt;em&gt;Write-Behind&lt;/em&gt; Inline Caching if strong consistency is not required and you desire better throughput.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock tip"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Tip&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-SBDG already supported &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/#geode-caching-provider-inline-caching-synchronous"&gt;Synchronous (Read/Write-Through) Inline Caching&lt;/a&gt;.  Also see the associated Sample &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/guides/caching-inline.html"&gt;Guide&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/tree/1.4.0-M2/spring-geode-samples/caching/inline"&gt;Example Code&lt;/a&gt;.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock tip"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Tip&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-SBDG also supports the &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/#geode-caching-provider-look-aside-caching"&gt;Look-Aside&lt;/a&gt;, &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/#geode-caching-provider-near-caching"&gt;Near&lt;/a&gt; and &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/guides/caching-multi-site.html"&gt;Multi-Site&lt;/a&gt; Caching patterns.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock note"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Note&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-When most people think of caching, they are technically referring to the &lt;em&gt;Look-Aside Caching&lt;/em&gt; pattern.  But, did you know, there are several patterns of caching: &lt;em&gt;Look-Aside&lt;/em&gt;, &lt;em&gt;Near Caching&lt;/em&gt;, &lt;em&gt;Inline Caching&lt;/em&gt; (Sync &amp;amp; Async) and &lt;em&gt;Multi-Site Caching&lt;/em&gt;.  Do not confuse the "pattern" of caching (how it is applied) with the "use case" for caching (what it is used for), e.g. (HTTP) Session state caching.  Yes, there are many more "uses" for caching, but very specific patterns with architectural pros and cons that are applicable to a use case or not.  "&lt;em&gt;The more you know&amp;#8230;&amp;#8203;&lt;/em&gt;"
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Both SBDG 1.4 M2 and 1.3.3.RELEASE include the new &lt;code&gt;spring-geode-bom&lt;/code&gt; module. Given SBDG consists of the following modules:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;spring-geode-starter&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;spring-geode-starter-actuator&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;spring-geode-starter-session&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;spring-geode-starter test&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;By using the new Maven BOM file, you can collectively and consistently manage the versions of SBDG&amp;#8217;s modules required by your application simply by declaring dependency management in your Spring Boot Gradle or Maven POM project build files.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;properties&amp;gt;
-    &amp;lt;spring-geode.version&amp;gt;1.4.0-M2&amp;lt;/spring-geode.version&amp;gt;
-&amp;lt;/properties&amp;gt;
-
-&amp;lt;dependencyManagement&amp;gt;
-    &amp;lt;dependencies&amp;gt;
-        &amp;lt;dependency&amp;gt;
-            &amp;lt;groupId&amp;gt;org.springframework.geode&amp;lt;/groupId&amp;gt;
-            &amp;lt;artifactId&amp;gt;spring-geode-bom&amp;lt;/artifactId&amp;gt;
-            &amp;lt;version&amp;gt;${spring-geode.version}&amp;lt;/version&amp;gt;
-            &amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
-            &amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
-        &amp;lt;/dependency&amp;gt;
-    &amp;lt;/dependencies&amp;gt;
-&amp;lt;/dependencyManagement&amp;gt;
-
-&amp;lt;dependencies&amp;gt;
-    &amp;lt;dependency&amp;gt;
-        &amp;lt;groupId&amp;gt;org.springframework.geode&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;spring-geode-starter&amp;lt;/artifactId&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-        &amp;lt;groupId&amp;gt;org.springframework.geode&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;spring-geode-starter-actuator&amp;lt;/artifactId&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-    &amp;lt;dependency&amp;gt;
-        &amp;lt;groupId&amp;gt;org.springframework.geode&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;spring-geode-starter-test&amp;lt;/artifactId&amp;gt;
-        &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-&amp;lt;/dependencies&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We will be requesting changes to Spring Initializer to declare the new &lt;code&gt;spring-geode-bom&lt;/code&gt; Maven BOM when generating Spring Boot Gradle/Maven projects using Apache Geode.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Other notable changes included in this release:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Updated the "&lt;em&gt;Getting Started&lt;/em&gt;" Sample &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/guides/getting-started.html"&gt;Guide&lt;/a&gt; with a Section called "&lt;em&gt;Matching Client/Server Versions&lt;/em&gt;" under &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/guides/getting-started.html#spring-geode-samples-getting-started-run-app-cloudplatform"&gt;"Run the Application in a Cloud Platform Environment"&lt;/a&gt; to help users navigate the version compatibility requirements of Spring Boot, Apache Geode, VMware/Pivotal GemFire and Pivotal Cloud Cache (now known as VMware Tanzu GemFire for VMs - BOSH)&amp;#8230;&amp;#8203; phew!&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Included a new Sample &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.4.x/reference/html5/guides/boot-security.html"&gt;Guide&lt;/a&gt; and &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/tree/1.4.0-M2/spring-geode-samples/boot/security"&gt;Example Code&lt;/a&gt; on Security, i.e. securing your GemFire/Geode client and server with Spring Boot when running in both local and managed (e.g. cloud platform) environments.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/blob/master/spring-geode/src/main/resources/changelog.txt#L7-L53"&gt;changelog&lt;/a&gt; for complete details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="whats-next"&gt;&lt;a class="anchor" href="#whats-next"&gt;&lt;/a&gt;What&amp;#8217;s Next&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We will probably round out the SBDG 1.4 releases up to GA with another Sample Guide and Code on Asynchronous (Write-Behind) Inline Caching and double down on making the existing features more robust and reliable.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;1 of the projects other overarching goals is to make it hard to do the wrong thing.  We still have a ways to go, but each step along the way I am more confident things are moving in the right direction.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="conclusion"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As always, feedback and contributions are welcomed and appreciated.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/pulls"&gt;PR&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Get the very first bits of Spring Authorization Server 0.0.1 !</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/21/get-the-very-first-bits-of-spring-authorization-server-0-0-1" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Joe Grandja</name>
-    </author>
-    <id>tag:spring.io,2020-08-20:4175</id>
-    <updated>2020-08-21T12:04:31Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the team and everyone who has contributed, we are very excited to deliver the very first bits of Spring Authorization Server in the 0.0.1 release!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can download it from &lt;a href="https://repo.spring.io/release/"&gt;repo.spring.io&lt;/a&gt; and Maven Central by using the module coordinates:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-groovy" data-lang="groovy"&gt;compile 'org.springframework.security.experimental:spring-security-oauth2-authorization-server:0.0.1'&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For additional details on this new project, see the &lt;a href="https://spring.io/blog/2020/04/15/announcing-the-spring-authorization-server"&gt;initial announcement&lt;/a&gt; and &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;project page&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The main features delivered in this initial release are:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;OAuth 2.0 Authorization Code Grant&amp;#8201;&amp;#8212;&amp;#8201;&lt;a href="https://tools.ietf.org/html/rfc6749#section-4.1"&gt;RFC 6749&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;OAuth 2.0 Client Credentials Grant&amp;#8201;&amp;#8212;&amp;#8201;&lt;a href="https://tools.ietf.org/html/rfc6749#section-4.4"&gt;RFC 6749&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;JSON Web Token (JWT)&amp;#8201;&amp;#8212;&amp;#8201;&lt;a href="https://tools.ietf.org/html/rfc7519"&gt;RFC 7519&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;JSON Web Signature (JWS)&amp;#8201;&amp;#8212;&amp;#8201;&lt;a href="https://tools.ietf.org/html/rfc7515"&gt;RFC 7515&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;JSON Web Key (JWK)&amp;#8201;&amp;#8212;&amp;#8201;&lt;a href="https://tools.ietf.org/html/rfc7517"&gt;RFC 7517&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Key Management for providing key(s) when signing a JWT (JWS)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/releases/tag/0.0.1"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/tree/master/samples/boot/oauth2-integration"&gt;sample&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this initial release.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; |  &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Bootiful Podcast: Google Cloud's Elena Felder on Spring Cloud GCP, Reactor, and More</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/21/bootiful-podcast-google-cloud-s-elena-felder-on-spring-cloud-gcp-reactor-and-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-08-21:4176</id>
-    <updated>2020-08-21T04:07:18Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this episode, &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Google Cloud&amp;rsquo;s &lt;a href="http://twitter.com/hellata"&gt;Elena Felder (@hellata)&lt;/a&gt; about building Reactor/Spring-based integrations for Google Cloud technologies like Google Cloud Spanner.&lt;/p&gt;
-&lt;iframe title="Google Cloud's Elena Felder on Google Cloud, Spanner, and Reactor-based integrations" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/phdqq-e80955?from=pb6admin&amp;download=1&amp;version=1&amp;auto=0&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Helvetica&amp;skin=1&amp;pfauth=&amp;btn-skin=107"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - August 18th, 2020</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/08/19/this-week-in-spring-august-18th-2020" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-08-19:4174</id>
-    <updated>2020-08-19T00:48:46Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Well, here we are! Nearing the end of August 2020! I can&amp;rsquo;t believe it! September follows August (last I checked) and with September comes SpringOne 2020! I am &lt;em&gt;so&lt;/em&gt; excited about this mega (and virtual) event and I hope you&amp;rsquo;ll consider joining us there! &lt;/p&gt;
-&lt;p&gt;On a personal note, today&amp;rsquo;s moving day for my family and me, so I have to get back to that. But we do have a &lt;em&gt;ton&lt;/em&gt; to get to so let&amp;rsquo;s dive into it.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/14/a-bootiful-podcast-rsocket-everywhere-and-maciej-walkowiak-on-spring-cloud-aws"&gt;A Bootiful Podcast: RSocket everywhere and Maciej Walkowiak on Spring Cloud AWS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/08/13/a-bootiful-podcast-software-security-in-the-supply-chain/"&gt;A Bootiful Podcast: Software Security in the Supply Chain&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/1295465794554429440"&gt;A new video in the Spring Cloud AWS series, this one looking at how to scale out databases with RDS and Spring Cloud AWS.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/17/case-study-http-request-function-and-processor"&gt;Case Study: HTTP Request Function and Processor&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/SpringData/status/1293476064094814208"&gt;CockroachDB &amp;amp; Spring Tutorials for Spring Data JDBC, JPA, &amp;amp; MyBatis&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/14/config-file-processing-in-spring-boot-2-4"&gt;Config file processing in Spring Boot 2.4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/14/creating-efficient-docker-images-with-spring-boot-2-3"&gt;Creating Efficient Docker Images with Spring Boot 2.3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Ts2a-YdN6vI"&gt;Getting started with Spring Cloud AWS - YouTube&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://reflectoring.io/spring-bean-lifecycle/"&gt;Hooking Into the Spring Bean Lifecycle&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/cloudfoundry/status/1295762491503292417"&gt;How &lt;code&gt;cf-for-k8s&lt;/code&gt; Reinvents Cloud Foundry as a Native Kubernetes App Platform&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://inside.java/2020/08/07/loom-performance/"&gt;Interesting post on the performance of user-mode threads and coroutines&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring-gcp.saturnism.me/"&gt;Introduction - Spring Boot on GCP&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://m.facebook.com/355408241562041/videos/708422819736807"&gt;Microsoft&amp;rsquo;s Rory Preddy on Integrating ¡°Reactive¡± APIs to traditional relational databases&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://inside.java/2020/08/18/foreign-api-jep/"&gt;New candidate JEP: 389: Foreign Linker API (Incubator)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/13/premiering-the-rsocket-revolution"&gt;Premiering: The RSocket Revolution&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/13/spring-batch-4-3-0-m2-is-out"&gt;Spring Batch 4.3.0-M2 is out!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/13/spring-boot-2-3-3-available-now"&gt;Spring Boot 2.3.3 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/14/spring-boot-2-4-0-m2-is-now-available"&gt;Spring Boot 2.4.0-M2 is now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/12/spring-data-2020-0-0-m2-released"&gt;Spring Data 2020.0.0-M2 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/12/spring-data-neumann-sr3-released"&gt;Spring Data Neumann SR3 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/17/spring-initializr-0-9-1-available-now"&gt;Spring Initializr 0.9.1 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/12/spring-integration-5-4-m2-available"&gt;Spring Integration 5.4 M2 Available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/12/spring-security-5-3-4-5-2-6-5-1-12-5-0-18-4-2-18-released"&gt;Spring Security 5.3.4, 5.2.6, 5.1.12, 5.0.18, 4.2.18 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/14/spring-security-5-4-0-rc1-released"&gt;Spring Security 5.4.0-RC1 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/1294325229913812993"&gt;The recent improvements to the way that Spring Boot loads configuration portend some nice changes for users of the Spring Cloud Config Server&amp;hellip;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/08/18/vmware-open-source-security-foundation/"&gt;VMware Hits the Ground Running with the Launch of Open Source Security Foundation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/1294389986016591881"&gt;Want to contribute to Spring Cloud Contract and move the code from Groovy to Java? We&amp;rsquo;d love your help&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1295765410655207428"&gt;What is Spring? A nice 4 minute explainer by Mark Heckler&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://inside.java/2020/08/12/skara-repos-transitions/"&gt;jdk/jdk repository transitions to Git, GitHub and Skara: September 5&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

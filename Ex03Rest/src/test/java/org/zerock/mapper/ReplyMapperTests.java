@@ -76,7 +76,7 @@ public class ReplyMapperTests {
 	@Test
 	public void testListWithPaging() {
 		log.info("TEST::ListWithPaging");
-		log.info(replyMapper.listWithPaging(new Criteria(), 307L));
+		/* log.info(replyMapper.listWithPaging(new Criteria(), 307L)); */
 	}
 
 }

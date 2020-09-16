@@ -15,9 +15,9 @@
 	<!-- HikariConnectPool Configuration -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig"
 		p:driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
-		p:jdbcUrl="jdbc:log4jdbc:oracle:thin:@15.165.66.140:1521:xe"
-		p:username="book_ex"
-		p:password="book_ex" />
+		p:jdbcUrl="jdbc:log4jdbc:oracle:thin:@127.0.0.1:1521:xe"
+		p:username="hr"
+		p:password="hr" />
 
 	<!-- dataSource Configuration -->
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close"

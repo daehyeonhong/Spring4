@@ -1,6 +1,5 @@
 package org.zerock.controller;
 
-import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.zerock.domain.Criteria;
+import org.zerock.domain.ReplyPageDTO;
 import org.zerock.domain.ReplyVO;
 import org.zerock.service.ReplyService;
 import lombok.AllArgsConstructor;
@@ -38,13 +38,13 @@ public class ReplyController {
 	}
 
 	/* 댓글 리스트 */
-	@GetMapping(value = "/pages/{bno}/{page}", produces = { MediaType.APPLICATION_ATOM_XML_VALUE,
+	@GetMapping(value = "/page/{bno}/{page}", produces = { MediaType.APPLICATION_ATOM_XML_VALUE,
 			MediaType.APPLICATION_JSON_UTF8_VALUE })
-	public ResponseEntity<List<ReplyVO>> list(@PathVariable("page") int page, @PathVariable("bno") Long bno) {
+	public ResponseEntity<ReplyPageDTO> list(@PathVariable("page") int page, @PathVariable("bno") Long bno) {
 		Criteria criteria = new Criteria(page, 10);
 		log.info("GetReplyList" + bno);
 		log.info("Criteria==> " + criteria);
-		return new ResponseEntity<List<ReplyVO>>(replyService.listWithPaging(criteria, bno), HttpStatus.OK);
+		return new ResponseEntity<ReplyPageDTO>(replyService.listWithPaging(criteria, bno), HttpStatus.OK);
 	}
 
 	@GetMapping(value = "/{rno}", produces = { MediaType.APPLICATION_ATOM_XML_VALUE,
