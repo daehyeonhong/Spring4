@@ -33,14 +33,14 @@
 		<![CDATA[
 				select rno,bno,reply,replyer,reply_date,update_date from
 				(SELECT
-				/*+index_decs(table_reply pk_reply)+*/
+				/*+index_asc(table_reply pk_reply)+*/
 				rownum rn,rno,bno,reply,replyer,reply_date,update_date
 				FROM table_reply
 				WHERE bno=#{bno}
 				and rno>0
 				and rownum<=#{criteria.pageNumber}*#{criteria.amount}
 				)
-				where rn>(#{criteria.pageNumber}-1)*#{criteria.amount}}
+				where rn>(#{criteria.pageNumber}-1)*#{criteria.amount}
 		]]>
 	</select>
 

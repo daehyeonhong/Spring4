@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="consumes"/>
+		<item key="selection" value="spring"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="consumes"/>
-			<item value="replies"/>
-			<item value="pages"/>
-			<item value="oper"/>
-			<item value="op"/>
-			<item value="page"/>
-			<item value="Page"/>
-			<item value="showList"/>
-			<item value="replyCnt"/>
-			<item value="replyUL"/>
-			<item value="cou"/>
-			<item value="co"/>
-			<item value="show"/>
-			<item value="move"/>
-			<item value="여기"/>
+			<item value="spring"/>
+			<item value="replyer"/>
+			<item value="modalInputReplyer"/>
+			<item value="modalInputReply_date"/>
+			<item value="date"/>
+			<item value="ydate"/>
+			<item value="utreplydate"/>
+			<item value="modalInputreplydate"/>
+			<item value="modalInputReplyDate"/>
+			<item value="addReplyBtn"/>
+			<item value="chat"/>
+			<item value="name=&quot;reply&quot;"/>
+			<item value="modalInputReply"/>
+			<item value="Reg"/>
+			<item value="reg"/>
 		</list>
 		<list key="replacehistory">
+			<item value="modalInputreply_date"/>
 			<item value="page"/>
 			<item value=""/>
 			<item value="pageNumber"/>
@@ -41,7 +42,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-367"/>
+		<item key="DIALOG_X_ORIGIN" value="8"/>
 		<item key="DIALOG_Y_ORIGIN" value="230"/>
 		<item key="DIALOG_WIDTH" value="288"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
