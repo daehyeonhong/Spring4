@@ -6,7 +6,7 @@
 	<item key="TypeHierarchyViewPart.qualifiednames" value="false"/>
 	<item key="TypeHierarchyViewPart.linkeditors" value="false"/>
 	<item key="TypeHierarchyViewPart.orientation" value="3"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Tools\Library"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Tools\Libraries"/>
 	<item key="Annotations" value="false"/>
 	<item key="Replace" value="true"/>
 	<item key="Comments" value="true"/>
@@ -26,6 +26,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
+		<item key="EmptyDefaultAssistCategory" value="false"/>
 	</section>
 	<section name="NewClassWizardPage">
 		<item key="create_constructor" value="false"/>

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="spring"/>
+		<item key="selection" value="api"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="api"/>
+			<item value="core"/>
+			<item value="log4j"/>
+			<item value="log4j-co"/>
+			<item value="log4j-ap"/>
+			<item value="log"/>
+			<item value="spy"/>
 			<item value="spring"/>
 			<item value="replyer"/>
 			<item value="modalInputReplyer"/>
@@ -16,13 +23,6 @@
 			<item value="ydate"/>
 			<item value="utreplydate"/>
 			<item value="modalInputreplydate"/>
-			<item value="modalInputReplyDate"/>
-			<item value="addReplyBtn"/>
-			<item value="chat"/>
-			<item value="name=&quot;reply&quot;"/>
-			<item value="modalInputReply"/>
-			<item value="Reg"/>
-			<item value="reg"/>
 		</list>
 		<list key="replacehistory">
 			<item value="modalInputreply_date"/>
