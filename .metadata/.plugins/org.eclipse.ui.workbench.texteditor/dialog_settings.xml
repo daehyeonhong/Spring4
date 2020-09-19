@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="api"/>
+		<item key="selection" value="modalModBtn"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="modalModBtn"/>
+			<item value="date"/>
+			<item value="reply_date"/>
+			<item value="disply"/>
 			<item value="api"/>
 			<item value="core"/>
 			<item value="log4j"/>
@@ -19,12 +23,9 @@
 			<item value="replyer"/>
 			<item value="modalInputReplyer"/>
 			<item value="modalInputReply_date"/>
-			<item value="date"/>
-			<item value="ydate"/>
-			<item value="utreplydate"/>
-			<item value="modalInputreplydate"/>
 		</list>
 		<list key="replacehistory">
+			<item value="display"/>
 			<item value="modalInputreply_date"/>
 			<item value="page"/>
 			<item value=""/>
@@ -42,8 +43,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="8"/>
-		<item key="DIALOG_Y_ORIGIN" value="230"/>
+		<item key="DIALOG_X_ORIGIN" value="-319"/>
+		<item key="DIALOG_Y_ORIGIN" value="170"/>
 		<item key="DIALOG_WIDTH" value="288"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
