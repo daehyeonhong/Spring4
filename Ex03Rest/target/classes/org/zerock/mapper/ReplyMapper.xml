@@ -33,7 +33,7 @@
 		<![CDATA[
 				select rno,bno,reply,replyer,reply_date,update_date from
 				(SELECT
-				/*+index_asc(table_reply pk_reply)+*/
+				/*+index_desc(table_reply pk_reply)+*/
 				rownum rn,rno,bno,reply,replyer,reply_date,update_date
 				FROM table_reply
 				WHERE bno=#{bno}

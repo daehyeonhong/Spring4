@@ -117,7 +117,7 @@ let replyService = (function () {
       let mm = dateObjet.getMonth() + 1;
       let dd = dateObjet.getDate();
       return [
-        yyyy,
+        yy,
         "/",
         (mm > 9 ? "" : "0") + mm,
         "/",

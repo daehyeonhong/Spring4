@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ include file="../includes/header.jsp"%>
@@ -16,8 +15,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<span>글 목록 페이지</span>
-				<button id='regBtn' type="button" class="btn btn-xs pull-right">새
-					글 등록</button>
+				<button id='regBtn' type="button" class="btn btn-xs pull-right">새 글 등록</button>
 			</div>
 
 			<!-- /.panel-heading -->
@@ -38,15 +36,6 @@
 							<td><c:out value="${board.bno}" /></td>
 
 							<td><a class="move" href="${board.bno}">${board.title}</a></td>
-
-							<%-- <td>
-<a href="/board/get?bno=${board.bno}">${board.title}</a>
-</td> --%>
-							<%-- <td><a href='/board/get?bno=<c:out value="${board.bno}"/>'><c:out value="${board.title}"/></a></td> --%>
-
-							<%-- <td><a class='move' href='<c:out value="${board.bno}"/>'>
-<c:out value="${board.title}" />
-</a></td> --%>
 
 							<td><c:out value="${board.writer}" /></td>
 							<td><fmt:formatDate pattern="yyyy-MM-dd"
@@ -92,20 +81,6 @@
 
 				<div class='pull-right'>
 					<ul class="pagination">
-
-						<%--             <c:if test="${pageMaker.prev}">
-              <li class="paginate_button previous"><a href="#">Previous</a>
-              </li>
-            </c:if>
-
-            <c:forEach var="num" begin="${pageMaker.startPage}"
-              end="${pageMaker.endPage}">
-              <li class="paginate_button"><a href="#">${num}</a></li>
-            </c:forEach>
-
-            <c:if test="${pageMaker.next}">
-              <li class="paginate_button next"><a href="#">Next</a></li>
-            </c:if> --%>
 
 						<c:if test="${pageMaker.prev}">
 							<li class="paginate_button previous"><a
@@ -173,10 +148,9 @@
 <!-- /.row -->
 
 <script type="text/javascript">
-	$(document)
-			.ready(
+	$().ready(
 					function() {
-						var result = '<c:out value="${result}"/>';
+						var result = '${result}';
 						checkModal(result);
 						history.replaceState({}, null, null);
 						function checkModal(result) {

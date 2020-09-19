@@ -90,3 +90,14 @@
 9월 17, 2020 08:38:42.944 [1732:2236:0917/083842.944:ERROR:device_event_log_impl.cc(208)] [08:38:42.943] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
 9월 17, 2020 09:42:04.425 [5584:9812:0917/094204.424:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
 9월 17, 2020 09:42:07.897 [5584:10492:0917/094207.897:ERROR:device_event_log_impl.cc(208)] [09:42:07.897] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+
+9월 19, 2020 17:57:03.441 NEW SESSION
+9월 19, 2020 17:57:03.446 [8488:10852:0919/175703.441:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 19, 2020 17:57:15.781 [8488:7484:0919/175715.781:ERROR:device_event_log_impl.cc(208)] [17:57:15.779] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+9월 19, 2020 18:00:01.966 [4108:9004:0919/180001.966:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 19, 2020 18:00:09.356 [4108:10220:0919/180009.356:ERROR:device_event_log_impl.cc(208)] [18:00:09.356] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+9월 19, 2020 20:36:41.693 [4108:10220:0919/203641.692:ERROR:CONSOLE(2365)] "One popover is already visible", source: devtools://devtools/bundled/ui/ui.js (2365)
+9월 19, 2020 21:05:19.364 [3600:6996:0919/210519.363:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 19, 2020 21:05:28.876 [3600:8448:0919/210528.876:ERROR:device_event_log_impl.cc(208)] [21:05:28.876] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+9월 19, 2020 21:43:25.674 [6444:2892:0919/214325.673:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 19, 2020 21:43:39.86 [6444:6280:0919/214339.085:ERROR:device_event_log_impl.cc(208)] [21:43:39.085] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
