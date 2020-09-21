@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.BoardMapper">
+
+	<sql id="criteria">
+		<trim prefix="(" suffix=")AND" prefixOverrides="OR">
+			<foreach collection="typeArray" item="type">
+				<trim prefix="OR">
+					<choose>
+						<when test="type=='T'.toString()">
+							<![CDATA[
+								title LIKE '%'||#{keyword}||'%'
+							]]>
+						</when>
+						<when test="type=='C'.toString()">
+							<![CDATA[
+								content LIKE '%'||#{keyword}||'%'
+							]]>
+						</when>
+						<when test="type=='W'.toString()">
+							<![CDATA[
+								writer LIKE '%'||#{keyword}||'%'
+							]]>
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+	</sql>
+
+	<select id="getList" resultType="org.zerock.domain.BoardDTO">
+		<![CDATA[
+			SELECT*FROM table_board WHERE bno>0 ORDER BY bno DESC
+		]]>
+	</select>
+
+	<!-- <select id="getListA" resultType="org.zerock.domain.BoardDTO"> <![CDATA[ 
+		SELECT bno,title,content,writer,regDate,updateDate FROM ( SELECT /*+INDEX_DESC(table_board 
+		pk_board)*/ ROWNUM rn,bno,title,content,writer,regDate,updateDate FROM table_board 
+		WHERE ROWNUM<=#{pageNumber}*#{amount} ) WHERE rn>(#{pageNumber}-1)*#{amount} 
+		]]> </select> -->
+
+	<select id="getListA" resultType="org.zerock.domain.BoardDTO">
+		<![CDATA[
+			SELECT bno,title,content,writer,regDate,updateDate
+				FROM
+					(
+						SELECT /*+INDEX_DESC(table_board pk_board)*/
+							ROWNUM rn,bno,title,content,writer,regDate,updateDate
+							FROM table_board
+						WHERE
+		]]>
+		<include refid="criteria" />
+
+		<![CDATA[
+						 ROWNUM<=#{pageNumber}*#{amount}
+					)
+			WHERE rn>(#{pageNumber}-1)*#{amount}
+		]]>
+	</select>
+
+	<insert id="insert">
+		<![CDATA[
+			INSERT INTO table_board(bno,title,content,writer)VALUES(seq_board.NEXTVAL,#{title},#{content},#{writer})
+		]]>
+	</insert>
+
+	<insert id="insertSelectKey">
+		<selectKey keyProperty="bno" order="BEFORE"
+			resultType="long">
+			<![CDATA[
+				SELECT seq_board.NEXTVAL from dual
+			]]>
+		</selectKey>
+
+		<![CDATA[
+			INSERT INTO table_board(bno,title,content,writer)VALUES(#{bno},#{title},#{content},#{writer})
+		]]>
+	</insert>
+
+	<select id="read" parameterType="long"
+		resultType="org.zerock.domain.BoardDTO">
+		<![CDATA[
+			SELECT*FROM table_board WHERE bno=#{bno}
+		]]>
+	</select>
+
+	<delete id="delete">
+		<![CDATA[
+			DELETE FROM table_board WHERE BNO=#{bno}
+		]]>
+	</delete>
+
+	<update id="update">
+		<![CDATA[
+			UPDATE table_board
+				SET title=#{title},
+						content=#{content},
+						writer=#{writer},
+						updateDate=SYSDATE
+				WHERE bno=#{bno}
+		]]>
+	</update>
+
+	<select id="getTotal" resultType="int">
+		<![CDATA[
+			SELECT COUNT(*)
+				FROM table_board
+			WHERE
+		]]>
+
+		<include refid="criteria" />
+
+		<![CDATA[
+			bno>0
+		]]>
+	</select>
+
+</mapper>

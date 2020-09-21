@@ -15,10 +15,6 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 
 	<context:annotation-config />
-	<context:component-scan
-		base-package="org.zerock.service" />
-	<context:component-scan
-		base-package="org.zerock.aop" />
 
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig"
 		p:driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
@@ -28,16 +24,20 @@
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource"
 		destroy-method="close" c:configuration-ref="hikariConfig" />
 
-	<bean id="sqlSessionFactoryBean"
+	<bean id="sqlSessionFactory"
 		class="org.mybatis.spring.SqlSessionFactoryBean"
 		p:dataSource-ref="dataSource" />
 
-	<bean id="dataSourceTransactionManager"
+	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
 		p:dataSource-ref="dataSource" />
 
 	<mybatis-spring:scan
 		base-package="org.zerock.mapper" />
+	<context:component-scan
+		base-package="org.zerock.service" />
+	<context:component-scan
+		base-package="org.zerock.aop" />
 
 	<tx:annotation-driven />
 	<aop:aspectj-autoproxy />

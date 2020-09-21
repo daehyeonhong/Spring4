@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="modalModBtn"/>
+		<item key="selection" value="oper"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="oper"/>
+			<item value="regBtn"/>
+			<item value="log4j"/>
 			<item value="modalModBtn"/>
 			<item value="date"/>
 			<item value="reply_date"/>
 			<item value="disply"/>
 			<item value="api"/>
-			<item value="core"/>
-			<item value="log4j"/>
-			<item value="log4j-co"/>
-			<item value="log4j-ap"/>
-			<item value="log"/>
-			<item value="spy"/>
-			<item value="spring"/>
-			<item value="replyer"/>
-			<item value="modalInputReplyer"/>
-			<item value="modalInputReply_date"/>
 		</list>
 		<list key="replacehistory">
 			<item value="display"/>
@@ -33,13 +26,6 @@
 			<item value="{criteria."/>
 			<item value="pageMaker.criteria."/>
 			<item value="criteria"/>
-			<item value="cri"/>
-			<item value="regDate"/>
-			<item value="regdate"/>
-			<item value="Mapping(&quot;/"/>
-			<item value="mapping(&quot;/"/>
-			<item value="/resources/"/>
-			<item value="resources/"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
