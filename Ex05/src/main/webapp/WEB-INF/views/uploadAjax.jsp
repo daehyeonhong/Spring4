@@ -131,10 +131,34 @@
 					data : formData,
 					type : 'POST',
 					success : function(result) {
-						alert("Uploaded")
+						/* alert("Uploaded") */
+						console.log(result);
+
+						showUploadFile(result);
+
+						$('.uploadDiv').html(cloneObject.html());
 					}
 				});
 			});
+
+			let uploadResult = $('.uploadResult ul');
+
+			function showUploadFile(uploadResultArray) {
+				let str = '';
+				$(uploadResultArray).each(function(i, object) {
+					if (!object.image) {
+						str += '<li><img src="/resources/img/attach.png">' + object.fileName+ '</li>';
+					} else {
+					str += '<li>' + object.fileName + "</li>";
+					let fileCallPath = encodeURIComponent(object.uploadPath + '/s_' + object.uuid + '_' + object.fileName);
+					let originalPath = object.uploadPath + '\\' + object.uuid + '_' + object.fileName;
+					str += '<li><a href=\'javascript:showImage(\'' + originalPath +'\')\'>'
+							+ '<img src=\'display?fileName=' + fileCallPath + '\'></a>'
+							+ '<span data-file=\'' + fileCallPath + '\'data-type=\'image\'></span></li>';
+					}
+				});
+				uploadResult.append(str);
+			}
 		});
 	</script>
 </body>
