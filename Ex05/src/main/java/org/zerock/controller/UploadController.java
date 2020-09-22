@@ -1,12 +1,10 @@
 package org.zerock.controller;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.fileUpload;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -14,19 +12,20 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.zerock.domain.AttachFileDTO;
-
 import lombok.extern.log4j.Log4j;
 import net.coobird.thumbnailator.Thumbnailator;
 
@@ -69,8 +68,15 @@ public class UploadController {
 	public ResponseEntity<List<AttachFileDTO>> uploadAjaxAction(MultipartFile[] uploadFile) {
 		log.info("uploadAjaxPost");
 		List<AttachFileDTO> list = new ArrayList<AttachFileDTO>();
+		AttachFileDTO attachFileDTO = new AttachFileDTO();
 		String uploadFolder = "c:\\upload";
-		File uploadPath = new File(uploadFolder, getFolder());
+		String uploadFolderPath = getFolder();/* {yyyy,MM,dd} */
+		File uploadPath = new File(uploadFolder, uploadFolderPath);/* c:\\upload\\yyyy\\MM\\dd */
+
+		/* 파일 저장 경로 없을 시 경로 생성 후 저장 */
+		if (!uploadPath.exists()) {
+			uploadPath.mkdirs();
+		}
 
 		for (MultipartFile multipartFile : uploadFile) {
 			log.info(":::::::::::::::::");
@@ -80,28 +86,29 @@ public class UploadController {
 			UUID uuid = UUID.randomUUID();
 			log.info(uuid);
 
-			String uploadFileName = uuid.toString() + "_" + multipartFile.getOriginalFilename();
+			String uploadFileName = multipartFile.getOriginalFilename();
+			uploadFileName = uploadFileName.substring(uploadFileName.lastIndexOf("\\") + 1);
 
+			attachFileDTO.setFileName(multipartFile.getOriginalFilename());/* File_Name */
+			uploadFileName = uuid.toString() + "_" + multipartFile.getOriginalFilename();
 			File saveFile = new File(uploadPath, uploadFileName);
 
-			AttachFileDTO attachFileDTO = new AttachFileDTO();
-			attachFileDTO.setFileName(multipartFile.getOriginalFilename());
 			log.info(saveFile.getAbsolutePath());
 			try {
-				/* 파일 저장 경로 없을 시 경로 생성 후 저장 */
-				if (!uploadPath.exists()) {
-					uploadPath.mkdirs();
-				}
 				multipartFile.transferTo(saveFile);
+
 				attachFileDTO.setUuid(uuid.toString());
-				attachFileDTO.setUploadPath(uploadPath.toString());
+				attachFileDTO.setUploadPath(uploadFolderPath.toString());
+
 				/* ThumbNail */
 				if (checkImageType(saveFile)) {
 					attachFileDTO.setImage(true);
 					FileOutputStream thumbnail = new FileOutputStream(new File(uploadPath, "s_" + uploadFileName));
 					Thumbnailator.createThumbnail(multipartFile.getInputStream(), thumbnail, 100, 100);
 				}
+
 				list.add(attachFileDTO);
+
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -128,6 +135,57 @@ public class UploadController {
 			e.printStackTrace();
 		}
 		return result;
+	}
+
+	@GetMapping(value = "/download", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
+	@ResponseBody
+	public ResponseEntity<Resource> downloadFile(@RequestHeader("User-Agent") String userAgent, String fileName) {
+		log.info("Download File: " + fileName);
+		Resource resource = new FileSystemResource("c:\\upload\\" + fileName);
+
+		if (resource.exists() == false) {
+			return new ResponseEntity<Resource>(HttpStatus.NOT_FOUND);
+		}
+
+		log.info("resource: " + resource);
+		String resourceName = resource.getFilename();
+		String resourceOriginalName = resourceName.substring(resourceName.indexOf("-") + 1);
+		HttpHeaders headers = new HttpHeaders();
+
+		try {
+			boolean checkIE = (userAgent.indexOf("MSIE") > -1 || userAgent.indexOf("Trident") > -1);
+			String downloadName = null;
+			if (checkIE) {
+				downloadName = URLEncoder.encode(resourceName, "UTF-8").replaceAll("\\+", " ");
+			} else {
+				downloadName = new String(resourceOriginalName.getBytes("UTF-8"), "ISO-8859-1");
+			}
+			headers.add("Content_Disposition", "attachment; fileName=" + downloadName);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return new ResponseEntity<Resource>(resource, headers, HttpStatus.OK);
+	}
+
+	@PostMapping("/deleteFile")
+	@ResponseBody
+	public ResponseEntity<String> deleteFile(String fileName, String type) {
+		log.info("deleteFile: " + fileName);
+		File file;
+		try {
+			file = new File("c:\\upload\\" + URLDecoder.decode(fileName, "UTF-8"));
+			file.delete();
+			if (type.equals("image")) {
+				String largeFileName = file.getAbsolutePath().replace("s_", "");
+				log.info(largeFileName);
+				file = new File(largeFileName);
+				file.delete();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
+		}
+		return new ResponseEntity<String>("delete", HttpStatus.OK);
 	}
 
 	private String getFolder() {
