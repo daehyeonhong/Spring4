@@ -8,14 +8,14 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="delete"/>
+			<item value="showImage"/>
 			<item value="fileNmae"/>
 			<item value="uploadResult"/>
 			<item value="object"/>
 			<item value="fileName"/>
 			<item value="cloneObject"/>
 			<item value="readcount"/>
-			<item value="utf-8"/>
-			<item value="oper"/>
 		</list>
 		<list key="replacehistory">
 			<item value="read_count"/>
