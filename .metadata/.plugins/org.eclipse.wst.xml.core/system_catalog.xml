@@ -39,4 +39,5 @@
   <public publicId="-//LOG4J//DTD LOG4J//EN" uri="jar:file:/C:/Tools/Framework/Spring4/plugins/org.springsource.ide.eclipse.commons.ui_3.9.14.202007202144-CI-B521.jar!/dtd/log4j-1.2.dtd" webURL="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd"/>
   <public publicId="-//SPRING//DTD BEAN//EN" uri="platform:/plugin/org.springframework.beans/org/springframework/beans/factory/xml/spring-beans.dtd" webURL="https://www.springframework.org/dtd/spring-beans.dtd"/>
   <public publicId="-//SPRING//DTD BEAN 2.0//EN" uri="jar:file:/C:/Tools/Framework/Spring4/plugins/org.springframework.beans_4.3.23.20190313-CI.jar!/org/springframework/beans/factory/xml/spring-beans-2.0.dtd" webURL="https://www.springframework.org/dtd/spring-beans-2.0.dtd"/>
+  <public publicId="-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" uri="jar:file:/C:/Tools/Framework/Spring4/plugins/org.mybatis.generator.eclipse.ui_1.4.0.201911242214.jar!/dtds/mybatis-generator-config_1_0.dtd"/>
 </catalog>

@@ -1,7 +1,7 @@
 AbstractTextEditor.Color.Background.SystemDefault=false
 AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
-STS4BootMarkerIndicationColor=44,67,20
+STS4BootMarkerIndicationColor=219,236,207
 eclipse.preferences.version=1
 overviewRuler_migration=migrated_3.1
 predarkestdark.AbstractTextEditor.Color.Background.SystemDefault=false
